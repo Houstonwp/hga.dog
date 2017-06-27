@@ -15,7 +15,7 @@ draft = true
 sex = ""
 color = ""
 petfinder = ""
-trackid = ""
+trackinfo = ""
 +++
 
 ## Introduction
