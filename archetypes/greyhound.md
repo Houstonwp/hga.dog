@@ -8,9 +8,7 @@ tags = [
 categories = [
 	""
 ]
-images = [
-	""
-]
+image = ""
 draft = true
 sex = ""
 color = ""
