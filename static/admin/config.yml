@@ -3,7 +3,7 @@ backend:
   repo: houstonwp/hga.dog # Path to your Github repository
   branch: master # Branch to update
   publish_mode: editorial_workflow
-  edit_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+  media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
   public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
   collections:
   - name: "greyhound" # Used in routes, e.g. /admin/collections/blog
