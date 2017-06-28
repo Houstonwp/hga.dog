@@ -2,24 +2,24 @@ backend:
   name: github
   repo: houstonwp/hga.dog # Path to your Github repository
   branch: master # Branch to update
-  publish_mode: editorial_workflow
-  media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
-  public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
-  collections:
-  - name: "greyhound" # Used in routes, e.g. /admin/collections/blog
-    label: "Greyhound" # Used in the UI
-    folder: "content/greyhound" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "greyhound"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "image", widget: "image"}
-      - {label: "Sex", name: "sex", widget: "select", options: "Male", "Female"}
-      - {label: "Color", name: "color", widget: "string"}
-      - {label: "Adoptable Status", name: "categories", widget: "select", options: ["Adoptable", "Adopted", "Pending"]}
-      - {label: "PetFinder Link", name: "petfinder", widget: "string"}
-      - {label: "TrackInfo Link", name: "trackinfo", widget: "string"}
-      - {label: "Features", name: "tags", widget: "list"}
-      - {label: "Description", name: "body", widget: "markdown"}
+publish_mode: editorial_workflow
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+collections:
+- name: "greyhound" # Used in routes, e.g. /admin/collections/blog
+  label: "Greyhound" # Used in the UI
+  folder: "content/greyhound" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Layout", name: "layout", widget: "hidden", default: "greyhound"}
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Publish Date", name: "date", widget: "datetime"}
+    - {label: "Featured Image", name: "image", widget: "image"}
+    - {label: "Sex", name: "sex", widget: "select", options: "Male", "Female"}
+    - {label: "Color", name: "color", widget: "string"}
+    - {label: "Adoptable Status", name: "categories", widget: "select", options: ["Adoptable", "Adopted", "Pending"]}
+    - {label: "PetFinder Link", name: "petfinder", widget: "string"}
+    - {label: "TrackInfo Link", name: "trackinfo", widget: "string"}
+    - {label: "Features", name: "tags", widget: "list"}
+    - {label: "Description", name: "body", widget: "markdown"}
