@@ -16,7 +16,7 @@ collections:
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Publish Date", name: "date", widget: "datetime"}
     - {label: "Featured Image", name: "image", widget: "image"}
-    - {label: "Sex", name: "sex", widget: "select", options: "Male", "Female"}
+    - {label: "Sex", name: "sex", widget: "select", options: ["Male", "Female"]}
     - {label: "Color", name: "color", widget: "string"}
     - {label: "Adoptable Status", name: "categories", widget: "select", options: ["Adoptable", "Adopted", "Pending"]}
     - {label: "PetFinder Link", name: "petfinder", widget: "string"}
