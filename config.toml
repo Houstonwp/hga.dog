@@ -15,8 +15,9 @@ theme = "hugo-elate-theme"
   # Navigation
   [params.navigation]
     brand = "Heartland Greyhound Adoption"
-    home = "Home"
+    #home = "Home"
     work = "Adoptables"
+    events = "Events"
     testimonials = "Testimonials"
     services = "Resources"
     about = "About"
@@ -47,7 +48,7 @@ theme = "hugo-elate-theme"
   [params.intro]
 
   [[params.intro.item]]
-    title = "Plan"
+    title = "Donate"
     description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
     url = "#"
     button = "Get In Touch"
@@ -55,7 +56,7 @@ theme = "hugo-elate-theme"
     img = "img_7.jpg"
 
   [[params.intro.item]]
-    title = "Develop"
+    title = "Volunteer"
     description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
     url = "#"
     button = "Click Me"
@@ -63,7 +64,7 @@ theme = "hugo-elate-theme"
     img = "img_8.jpg"
 
   [[params.intro.item]]
-    title = "Launch"
+    title = "Adopt"
     description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
     url = "#"
     button = "Why us?"
@@ -76,30 +77,37 @@ theme = "hugo-elate-theme"
     icon = "icon-play2"
     url = "https://vimeo.com/channels/staffpicks/93951774"
 
+  [params.intro.posts]
+    enable = true
+    title = "Featured Post"
+    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    url = "#"
+    footertext = '<a class= "btn btn-primary" href="http://plmd.me/" target="_blank"><span class="btn-home">READ MORE</span></a>'
+
 
   # Work section
   [params.work]
     enable = true
     title = "Adoptables"
     description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
-    footertext = '<a class= "btn btn-primary" href="http://plmd.me/" target="_blank"><span>SEE MORE</span></a>'
+    footertext = '<a class= "btn btn-primary" href="http://plmd.me/" target="_blank"><span class="btn-home">SEE MORE</span></a>'
 
     [[params.work.row]]
-      img = "work_1.jpg"
-      alt = "Image2"
-      title = "Project 1"
+      img = "uploads/marty-kass-1-@1x.jpg.jpg"
+      alt = "Marty Kass 1"
+      title = "Marty Kass"
       subtitle = "Branding"
 
     [[params.work.row]]
-      img = "work_2.jpg"
+      img = "uploads/marty-kass-2-@1x.jpg.jpg"
       alt = "Image2"
-      title = "Project 2"
+      title = "Boc's Tipn Point"
       subtitle = "Design"
 
     [[params.work.row]]
-      img = "work_3.jpg"
+      img = "uploads/marty-kass-3-@1x.jpg.jpg"
       alt = "Image3"
-      title = "Project 3"
+      title = "Boc's Give Away"
       subtitle = "Design"
 
     [[params.work.row]]
@@ -144,28 +152,34 @@ theme = "hugo-elate-theme"
       img = "person3.jpg"
       alt = "Person3"
     
+  # Events section
+  [params.events]
+    enable = true
+    title = "Events"
+    description = "Whether you've never met a greyhound or have five in your family, there is an event for you! See what is coming up soon."
+    footertext = '<a class= "btn btn-primary" href="http://plmd.me/" target="_blank"><span class="btn-home">SEE MORE</span></a>'
 
 
 
   # Services section
   [params.services]
     enable = true
-    title = "Services"
+    title = "Resources"
     description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
 
     [[params.services.item]]
       title = "Brand &amp; Strategy"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-anchor"
+      icon = "icon-support"
 
     [[params.services.item]]
       title = "Web &amp; Interface"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-layers2"
+      icon = "icon-bubbles"
     [[params.services.item]]
       title = "Photo &amp; Video"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-video2"
+      icon = "icon-home"
 
       [[params.services.item]]
       title = "CMS &amp; eCommerce"
@@ -176,43 +190,48 @@ theme = "hugo-elate-theme"
   [params.about]
     enable = true
     title = "About"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "Heartland Greyhound Adoption is a volunteer not-for-profit 501&#40;c&#41;(3) organization, formed and operating in central Iowa to promote the adoption of retired racing greyhounds."
+    footertext = '<a class= "btn btn-primary" href="http://plmd.me/" target="_blank"><span class="btn-home">READ MORE</span></a>'
 
     [[params.about.item]]
-      name = "Jean Smith"
-      position = "Web Designer"
+      name = "Jody Phelps"
+      position = "President"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
       img = "person1.jpg"
-      alt = "Person1"
+      alt = "Jody Phelps"
       social = [
-        ["icon-twitter", "#"],
-        ["icon-facebook", "#"],
-        ["icon-linkedin", "#"]
+        ["icon-envelope", "mailto:president@hga.dog"],
       ]
 
     [[params.about.item]]
       name = "Rob Smith"
-      position = "Web Developer"
+      position = "Vice President"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
       img = "person2.jpg"
       alt = "Person2"
       social = [
-        ["icon-twitter", "#"],
-        ["icon-facebook", "#"],
-        ["icon-github", "#"]
+        ["icon-envelope", "#"]
       ]
 
     [[params.about.item]]
       name = "Larry Ben"
-      position = "Web Designer"
+      position = "Secretary"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
       img = "person3.jpg"
       alt = "Person3"
       social = [
-        ["icon-twitter", "#"],
-        ["icon-facebook", "#"],
-        ["icon-dribbble", "#"]
-      ]      
+        ["icon-envelope", "#"]
+      ]
+
+    [[params.about.item]]
+      name = "Larry Ben"
+      position = "Treasurer"
+      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
+      img = "person3.jpg"
+      alt = "Person3"
+      social = [
+        ["icon-envelope", "#"]
+      ]
 
   # Counters section
   [params.counters]
@@ -255,7 +274,7 @@ theme = "hugo-elate-theme"
   # Contact section
   [params.contact]
     enable = true
-    map = true
+    map = false
     title = "Get in touch"
     description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
     
@@ -276,4 +295,4 @@ theme = "hugo-elate-theme"
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; Elate Free HTML5. All Rights Reserved. <br>Created by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Images: <a href="http://pexels.com/" target="_blank">Pexels</a>, <a href="http://plmd.me/" target="_blank">plmd.me</a> <br>Hugo port by: <a href="https://github.com/saey55" target="_blank">saey55</a>'
+    copyright = '&copy; Heartlang Greyhound Adoption. All Rights Reserved. <br>Created by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Images: <a href="http://pexels.com/" target="_blank">Pexels</a>, <a href="http://plmd.me/" target="_blank">plmd.me</a> <br>Hugo port by: <a href="https://github.com/saey55" target="_blank">saey55</a>'

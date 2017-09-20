@@ -1,21 +1,13 @@
 +++
 title = "{{ replace .TranslationBaseName "-" " " | title }}"
 date = {{ .Date }}
-slug = "{{ .TranslationBaseName }}"
-tags = [
-	""
-]
-categories = [
-	""
-]
-image = ""
-draft = true
+status = ""
 sex = ""
-color = ""
-petfinder = ""
-trackinfo = ""
+age = ""
+images = ["",
+]
+draft = false
+slug = "{{ .TranslationBaseName }}"
 +++
-
-## Introduction
 
 ## Description
