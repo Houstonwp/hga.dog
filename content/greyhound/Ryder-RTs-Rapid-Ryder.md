@@ -1,6 +1,6 @@
 +++
 title = "Ryder (RT's Rapid Ryder)"
-status = "A"
+status = "X"
 sex = ""
 age = "Young"
 images = ["http://photos.petfinder.com/photos/pets/38773200/1/?bust=1500142241&width=500&-x.jpg",
