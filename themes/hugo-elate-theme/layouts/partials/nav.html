@@ -2,20 +2,24 @@
         <div class="container">
             <!-- <div class="row"> -->
             <nav class="navbar navbar-default">
-                <div class="navbar-header">
+                <div class="navbar-header small">
+                    <!-- Mobile Toggle Menu Button -->
+                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                    <!-- <img class="navbar-logo" src="/images/HGA_LogoExport.png" alt="Heartland Greyhound Adoption" href="/index.html" /> -->
+                    <a class="navbar-brand" href="index.html">Heartland Greyhound</a> 
+                </div>
+                <div class="navbar-header medium">
                     <!-- Mobile Toggle Menu Button -->
                     <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
                     <!-- <img class="navbar-logo" src="/images/HGA_LogoExport.png" alt="Heartland Greyhound Adoption" href="/index.html" /> -->
                     <a class="navbar-brand" href="index.html">{{ with .Site.Params.navigation.brand }}{{ . | markdownify }}{{ end }}</a> 
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                  <ul class="nav navbar-nav navbar-right">
+                  <ul class="nav navbar-nav">
 
                     {{ range .Site.Menus.prepend }}
                         <li><a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a></li>
                     {{ end }}
-
-                    <li class="active"><a href="#" data-nav-section="home"><span>{{ with .Site.Params.navigation.home }}{{ . | markdownify }}{{ end }}</span></a></li>
                     
                     {{ if .Site.Params.work.enable }}
                     <li><a href="#" data-nav-section="work"><span>{{ with .Site.Params.navigation.work }}{{ . | markdownify }}{{ end }}</span></a></li> 

@@ -49,25 +49,25 @@ theme = "hugo-elate-theme"
 
   [[params.intro.item]]
     title = "Donate"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "We rely on donations to support the entire adoption process from vetting to microchips."
     url = "#"
-    button = "Get In Touch"
+    button = "Support Us"
     icon = "icon-bulb"
     img = "img_7.jpg"
 
   [[params.intro.item]]
     title = "Volunteer"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "HGA is run by volunteers. Whether it is helping at an event or fostering, we'd love your help!"
     url = "#"
-    button = "Click Me"
+    button = "Opportunities"
     icon = "icon-wrench"
     img = "img_8.jpg"
 
   [[params.intro.item]]
     title = "Adopt"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "Interested in adoption? See what the adoption process is like and our requirements."
     url = "#"
-    button = "Why us?"
+    button = "Learn Now"
     icon = "icon-rocket"
     img = "img_10.jpg"
 
@@ -89,7 +89,7 @@ theme = "hugo-elate-theme"
   [params.work]
     enable = true
     title = "Adoptables"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "The number of dogs we have available for adoption fluctuates. We update this list daily."
     footertext = '<a class= "btn btn-primary" href="http://plmd.me/" target="_blank"><span class="btn-home">SEE MORE</span></a>'
 
     [[params.work.row]]
@@ -110,24 +110,6 @@ theme = "hugo-elate-theme"
       title = "Boc's Give Away"
       subtitle = "Design"
 
-    [[params.work.row]]
-      img = "work_4.jpg"
-      alt = "Image4"
-      title = "Project 4"
-      subtitle = "Design"
-
-    [[params.work.row]]
-      img = "work_5.jpg"
-      alt = "Image5"
-      title = "Project 5"
-      subtitle = "Design"
-
-    [[params.work.row]]
-      img = "work_6.jpg"
-      alt = "Image6"
-      title = "Project 6"
-      subtitle = "Design"
-
   # Testimonials section
   [params.testimonials]
     enable = true
@@ -136,19 +118,19 @@ theme = "hugo-elate-theme"
 
     [[params.testimonials.item]]
       quote = "&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;"
-      person = 'Jean Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
+      person = 'Jean Doe'
       img = "person1.jpg"
       alt = "Person1"
 
     [[params.testimonials.item]]
       quote = "&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;"
-      person = 'John Doe, Senior UI <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
+      person = 'John Doe'
       img = "person2.jpg"
       alt = "Person2"
 
     [[params.testimonials.item]]
       quote = "&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. &rdquo;"
-      person = 'Chris Nash, Director <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
+      person = 'Chris Nash'
       img = "person3.jpg"
       alt = "Person3"
     
@@ -165,24 +147,24 @@ theme = "hugo-elate-theme"
   [params.services]
     enable = true
     title = "Resources"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "Whether you're new to greyhounds or have been around them all your life, we are here to help."
 
     [[params.services.item]]
-      title = "Brand &amp; Strategy"
+      title = "Frequently Asked Questions"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
       icon = "icon-support"
 
     [[params.services.item]]
-      title = "Web &amp; Interface"
+      title = "Discussion"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
       icon = "icon-bubbles"
     [[params.services.item]]
-      title = "Photo &amp; Video"
+      title = "Blog"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
       icon = "icon-home"
 
       [[params.services.item]]
-      title = "CMS &amp; eCommerce"
+      title = "Greyhound Data"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"      
       icon = "icon-monitor"
 
@@ -276,14 +258,14 @@ theme = "hugo-elate-theme"
     enable = true
     map = false
     title = "Get in touch"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "Do you have questions or comments? It's easy to get in touch with HGA."
     
     # Available icons: http://simplelineicons.com/
     details = [
-        ["icon-home", "5555 Love Paradise 56 New Clity 5655, <br> Excel Tower United Kingdom"],
-        ["icon-phone", "(123) 465-6789"],
-        ["icon-envelope", "info@freehtml5.co"],
-        ["icon-globe", '<a href="http://freehtml5.co/" target="_blank">freehtml5.co</a>']
+        ["icon-home", "Heartland Greyhound Adoption: P.O. Box 342, Bondurant, IA, 50035"],
+        ["icon-phone", "(515) 210-0459"],
+        ["icon-envelope", "info@hga.dog"],
+       # ["icon-globe", '<a href="http://freehtml5.co/" target="_blank">freehtml5.co</a>']
       ]
 
     name = "Name"
@@ -295,4 +277,4 @@ theme = "hugo-elate-theme"
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; Heartlang Greyhound Adoption. All Rights Reserved. <br>Created by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Images: <a href="http://pexels.com/" target="_blank">Pexels</a>, <a href="http://plmd.me/" target="_blank">plmd.me</a> <br>Hugo port by: <a href="https://github.com/saey55" target="_blank">saey55</a>'
+    copyright = '&copy; Heartlang Greyhound Adoption. All Rights Reserved. <br>Created by Houston Perrett'
