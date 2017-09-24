@@ -1,0 +1,34 @@
+	<section id="fh5co-adoptables">
+		{{ $list := (where (where .Site.Pages "Type" "greyhounds") ".Params.status" "eq" "X")}}
+		{{ $len := len $list}}
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">Our Alumni</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>Over {{ $len }} greyhounds have found their forever home.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-bottom-padded-sm">
+			{{ range (where (where .Site.Pages "Type" "greyhounds") ".Params.status" "eq" "X") }}
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<a href="#" class="fh5co-project-item to-animate">
+						{{ range first 1 .Params.images }}
+						<div style="max-width:500px;padding-top:75%;position:relative;">
+							<img style="position:absolute;top:0;left:0;" src={{ printf "%s" . }} alt="{{ $.Params.title }}" class="img-responsive lazy" >
+						</div>
+						{{ end }}
+						<div style="z-index:10; position:relative; background-color:white;" class="fh5co-text">
+						<h2>{{ .Params.title }}</h2>
+							<span>I found my furever home!</span>
+						</div>
+					</a>
+				</div>				
+			{{ end }}
+			<div class="clearfix visible-sm-block"></div>
+			</div>
+		</div>
+	</section>

@@ -7,7 +7,19 @@ url = "/adoption/"
 layout = "adopt"
 +++
 
-A greyhound’s life at the track is dramatically different from that of a household pet. Racers lead highly regimented lives focused on athletic training and performance. With that in mind, Heartland Greyhound Adoption offers the tips listed below for those considering greyhound adoption.
+A greyhound’s life at the track is dramatically different from that of a household pet. Racers lead highly regimented lives focused on athletic training and performance. 
+
+Greyhounds are intelligent, calm, graceful creatures that make wonderful pets. These good-natured sight hounds thrive on love and attention. They reward their owners with a lifetime of unconditional love and affection. Find out what greyhound greyhound owners have known for centuries: Adopt a gentle greyhound and make a lifelong friend.
+
+Greyhounds love people and tend to be quite sociable. Retired racers have been handled a great deal during their early years by dog walkers, trainers, veterinarians and others. Many trainers are women who sometimes bring their children to work, so retired racers frequently have been exposed to children of all ages.
+
+The greyhounds available for adoption through HGA are usually between 2 and 5 years old. They weigh between 50 and 80 pounds and stand from 26 to 30 inches at the shoulder. Their average life span is 12 and 15 years. They are very clean, have minimal shedding and no doggy odor. Greyhounds also vary in colors; they may be anything from blue (grey) to brindle.
+
+Retired racers have been trained to chase lures, and it is the Greyhound’s nature to run. They are sprinters who can run up to 45 miles an hour for very short periods.
+
+Thousands of years of breeding and racing experience combine to mean greyhounds must NEVER be allowed to run loose. They must always be leashed and handled by an adult when outdoors unless they are in a securely fenced area. Years of obedience training and bonding with their owner will not change this. And, most communities have leash laws that dog owners must follow.
+
+Greyhounds at home don’t need a lot of exercise. They are content with a soft bed and a walk with you!
 
 ### How to Adopt ###
 

@@ -461,12 +461,38 @@
 		}
 	};
 
+	var adoptablesAnimate = function() {
+		if ( $('#fh5co-adoptables').length > 0 ) {	
+
+			$('#fh5co-adoptables').waypoint( function( direction ) {
+										
+				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+
+
+					setTimeout(function() {
+						$('#fh5co-adoptables .to-animate').each(function( k ) {
+							var el = $(this);
+							
+							setTimeout ( function () {
+								el.addClass('fadeInUp animated');
+							},  k * 200, 'easeInOutExpo' );
+							
+						});
+					}, 200);
+
+					
+					$(this.element).addClass('animated');
+						
+				}
+			} , { offset: '80%' } );
+
+		}
+	};
 
 	
 	
 
-
-	
+	$("img.lazy").lazyload();
 	
 
 	// Document on load.
@@ -495,8 +521,9 @@
 		aboutAnimate();
 		countersAnimate();
 		contactAnimate();
+		adoptablesAnimate();
 		
-
+			
 	});
 
 
