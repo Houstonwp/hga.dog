@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        {{ partial "head.html" .}}
+    </head>
+    <body>
+        {{ partial "nav.html" .}}
+
+        <section id="fh5co-adopt">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 section-heading text-left">
+                        <h2 class=" left-border">{{ .Title | markdownify }}</h2>
+                        <div class="row">
+                            <div class="col-md-8 subtext">
+                                <h3>{{ .Description | markdownify }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 fh5co-adopt">
+                        <form name="Adoption Application" data-netlify="true" action="thank-you">
+                            <div class="row">
+                                <div>
+                                    <h3 style="margin-bottom:20px; margin-left:20px;">APPLICANT #1</h3>
+                                </div>
+                                <div class="form-group col-md-4 col-sm-6">
+                                    {{ with .Site.Params.application.name }}
+                                    <label for="name" class="sr-only">{{ . | markdownify }}</label>
+                                    <input id="name" class="form-control" name="name" placeholder="{{ . }}" type="text">
+                                    {{ end }}
+                                </div>
+                                <div class="form-group col-md-2 col-sm-6">
+                                        {{ with .Site.Params.application.age }}
+                                        <label for="age" class="sr-only">{{ . | markdownify }}</label>
+                                        <input id="age" class="form-control" name="age" placeholder="{{ . }}" type="number" min="18" max="100">
+                                        {{ end }}
+                                    </div>
+                                    <div class="form-group col-md-3 col-sm-6">
+                                        {{ with .Site.Params.application.phone }}
+                                        <label for="phone" class="sr-only">{{ . | markdownify }}</label>
+                                        <input id="phone" class="form-control" name="phone" placeholder="{{ . }}" type="tel">
+                                        {{ end }}
+                                    </div>
+                                   
+                                        <div class="form-group col-md-3 col-sm-6">
+                                                {{ with .Site.Params.application.email }}
+                                                <label for="email" class="sr-only">{{ . | markdownify }}</label>
+                                                <input id="email" class="form-control" name="email" placeholder="{{ . }}" type="email">
+                                                {{ end }}
+                                            </div>
+                                <div class="form-group col-sm-6">
+                                    {{ with .Site.Params.application.occupation }}
+                                    <label for="occupation" class="sr-only">{{ . | markdownify }}</label>
+                                    <input id="occupation" class="form-control" name="occupation" placeholder="{{ . }}" type="text">
+                                    {{ end }}
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    {{ with .Site.Params.application.employer }}
+                                    <label for="employer" class="sr-only">{{ . | markdownify }}</label>
+                                    <input id="employer" class="form-control" name="employer" placeholder="{{ . }}" type="text">
+                                    {{ end }}
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <h3 style="margin-bottom:20px; margin-left:20px;">APPLICANT #2</h3>
+                                </div>
+                                <div class="form-group col-md-4 col-sm-6">
+                                        {{ with .Site.Params.application.name }}
+                                        <label for="name" class="sr-only">{{ . | markdownify }}</label>
+                                        <input id="name" class="form-control" name="name" placeholder="{{ . }}" type="text">
+                                        {{ end }}
+                                    </div>
+                                    <div class="form-group col-md-2 col-sm-6">
+                                            {{ with .Site.Params.application.age }}
+                                            <label for="age" class="sr-only">{{ . | markdownify }}</label>
+                                            <input id="age" class="form-control" name="age" placeholder="{{ . }}" type="number" min="18" max="100">
+                                            {{ end }}
+                                        </div>
+                                        <div class="form-group col-md-3 col-sm-6">
+                                            {{ with .Site.Params.application.phone }}
+                                            <label for="phone" class="sr-only">{{ . | markdownify }}</label>
+                                            <input id="phone" class="form-control" name="phone" placeholder="{{ . }}" type="tel">
+                                            {{ end }}
+                                        </div>
+                                    <div class="form-group col-md-3 col-sm-6">
+                                            {{ with .Site.Params.application.email }}
+                                            <label for="email" class="sr-only">{{ . | markdownify }}</label>
+                                            <input id="email" class="form-control" name="email" placeholder="{{ . }}" type="email">
+                                            {{ end }}
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        {{ with .Site.Params.application.occupation }}
+                                        <label for="occupation" class="sr-only">{{ . | markdownify }}</label>
+                                        <input id="occupation" class="form-control" name="occupation" placeholder="{{ . }}" type="text">
+                                        {{ end }}
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        {{ with .Site.Params.application.employer }}
+                                        <label for="employer" class="sr-only">{{ . | markdownify }}</label>
+                                        <input id="employer" class="form-control" name="employer" placeholder="{{ . }}" type="text">
+                                        {{ end }}
+                                    </div>
+                            </div>
+                        <hr>
+                        <div class="row">
+                            <div>
+                                <h3 style="margin-bottom:20px; margin-left:20px;">About Your Home</h3>
+                            </div>
+                            <div class="form-group col-md-4 col-sm-12">
+                                {{ with .Site.Params.application.address }}
+                                <label for="address" class="sr-only">{{ . | markdownify }}</label>
+                                <input id="address" class="form-control" name="address" placeholder="{{ . }}" type="text">
+                                {{ end }}
+                            </div>
+                            <div class="form-group col-md-4 col-sm-6">
+                                    {{ with .Site.Params.application.city }}
+                                    <label for="city" class="sr-only">{{ . | markdownify }}</label>
+                                    <input id="city" class="form-control" name="city" placeholder="{{ . }}" type="text">
+                                    {{ end }}
+                                </div>
+                            <div class="form-group col-md-2 col-sm-3">
+                                {{ with .Site.Params.application.state }}
+                                <label for="state" class="sr-only">{{ . | markdownify }}</label>
+                                <input id="state" class="form-control" name="state" placeholder="{{ . }}" type="email">
+                                {{ end }}
+                            </div>
+                            <div class="form-group col-md-2 col-sm-3">
+                                {{ with .Site.Params.application.zip }}
+                                <label for="zip" class="sr-only">{{ . | markdownify }}</label>
+                                <input id="zip" class="form-control" name="zip" placeholder="{{ . }}" type="number" min="0" max="99999">
+                                {{ end }}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group form-dwelling col-sm-6">
+                                <label>Select your dwelling type</label>
+                                <br>
+                                <select class="form-group" id='dwelling-type'>
+                                    <option value="1-Family Home">1-Family Home</option>
+                                    <option value="2-Family Home">2-Family Home</option>
+                                    <option value="Apartment">Apartment</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group form-ownership col-sm-6">
+                                    <label>Do you own or rent?</label>
+                                    <br>
+                                    <select class="form-group" id='ownership'>
+                                            <option value="Own">Own</option>
+                                            <option value="Rent">Rent</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group form-dwelling-option col-sm-6">
+                                    <label>Specify your dwelling type</label>
+                                    <br>
+                                    <input type="text" name="dwelling-input" class="form-control">
+                            </div>
+                            <div class="form-group form-permission-option col-sm-6">
+                                <label>Can you get a written note of permission from your landlord stating that you may have a Greyhound?</label>
+                                <br>
+                                <select class="form-group" id='permission'>
+                                        <option value="No">No</option>    
+                                        <option value="Yes">Yes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group form-fence col-sm-6">
+                                    <label>Do you have a fenced in yard?</label>
+                                    <p style="margin-bottom:5px;">Invisible fences are not acceptable.</p>
+                                    <select class="form-group" id='fence'>
+                                        <option value="No">No</option>    
+                                        <option value="Yes">Yes</option>
+                                    </select>
+                                </div>
+                            <div class="form-group form-stairs col-sm-6">
+                                <label>Are there stairs in your home that the dog will need to go up and down?</label>
+                                <br>                                    
+                                <select class="form-group" id='stairs'>
+                                    <option value="No">No</option>    
+                                    <option value="Yes">Yes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group form-fence-yes col-md-8 col-sm-6">
+                                <textarea id="fence-description" cols="15" rows="3" class="form-control" name="fence-description" placeholder="Please provide a description."></textarea>
+                            </div>
+                            <div class="form-group form-stairs-yes col-md-8 col-sm-6">
+                                <textarea id="stairs-description" cols="15" rows="3" class="form-control" name="fence-description" placeholder="Please describe what type, location, and how many."></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div class="form-group form-outside col-md-6 col-sm-12">
+                                    <label>Are you willing and able to take the dog outside to relieve itself at least 4 to 5 times every day in all kinds of weather?</label>
+                                    <br>                                    
+                                    <select class="form-group" id='outside'>
+                                        <option value="No">No</option>    
+                                        <option value="Yes">Yes</option>
+                                    </select>
+                                </div>
+                                <div class="form-group form-leash col-md-6 col-sm-12">
+                                    <label>Explain briefly how you feel about walking a dog on a leash at all times when outside and not in a completely fenced in area.</label>
+                                    <br>
+                                    <textarea id="leash-description" cols="15" rows="4" class="form-control" name="fence-description"></textarea>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="form-group form-lost col-sm-12">
+                                    <label>Do you promise to keep a collar, bearing identification, on the dog at all times, and further promise to notify Heartland Greyhound Adoption immediately if the dog should ever become lost?</label>
+                                    <br>                                    
+                                    <select class="form-group" id='lost'>
+                                        <option value="No">No</option>    
+                                        <option value="Yes">Yes</option>
+                                    </select>
+                                </div>
+                                <div class="form-group form-chained col-sm-12">
+                                        <label>Do you understand that Greyhounds can not be chained and left outside?</label>
+                                        <br>                                    
+                                        <select class="form-group" id='chained'>
+                                            <option value="No">No</option>    
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group form-racer col-sm-12">
+                                    <label>Are you fully aware of the fact that this dog's career as a racer is over, and that you will be unable to re-activate that career?</label>
+                                    <br>                                    
+                                    <select class="form-group" id='racer'>
+                                        <option value="No">No</option>    
+                                        <option value="Yes">Yes</option>
+                                    </select>
+                                </div>
+                                <div class="form-group form-financial col-sm-12">
+                                    <label>Have you carefully thought about your willingness and ability to financially care for your greyhound should it develop 'special needs' and require medical attention beyond the regular and routine health checkups, shots, and annual dental cleaning?</label>
+                                    <br>                                    
+                                    <select class="form-group" id='financial'>
+                                        <option value="No">No</option>    
+                                        <option value="Yes">Yes</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group form-family col-sm-12">
+                                    <label>Are you prepared to include your greyhound in your home as a family member by
+                                        providing a soft, cushioned bed on which it can rest; an elevated dish where it can eat and drink; a crate for security when you're away; a warm coat for the greyhound to wear in
+                                        cold weather; a few latex toys for it to play with; and a sof, gently voice and hand to earn
+                                        the greyhound's love and devotion?</label>
+                                    <br>                                    
+                                    <input class="form-control" id='family' type="text" placeholder="Place your initials here.">
+                                </div>
+                                <div class="form-group form-book col-sm-12">
+                                    <label>Are you prepared to obtain one of the two books required by Heartland Greyhound
+                                        Adoption and to have read it prior to placement of your greyhound?</label>
+                                    <br>                                    
+                                    <select class="form-group" id='book'>
+                                        <option value="No">No</option>    
+                                        <option value="Yes">Yes</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div>
+                                    <h3 style="margin-bottom:20px; margin-left:20px;">Veterinarian Information</h3>
+                                </div>
+                                <div class="form-group col-md-8 col-sm-6">
+                                    {{ with .Site.Params.application.name }}
+                                    <label for="name" class="sr-only">{{ . | markdownify }}</label>
+                                    <input id="name" class="form-control" name="name" placeholder="{{ . }}" type="text">
+                                    {{ end }}
+                                </div>
+                                    <div class="form-group col-md-4 col-sm-6">
+                                        {{ with .Site.Params.application.phone }}
+                                        <label for="phone" class="sr-only">{{ . | markdownify }}</label>
+                                        <input id="phone" class="form-control" name="phone" placeholder="{{ . }}" type="tel">
+                                        {{ end }}
+                                    </div>
+                            </div>
+                            <div class="row">
+                                    <div class="form-group col-md-4 col-sm-12">
+                                        {{ with .Site.Params.application.address }}
+                                        <label for="address" class="sr-only">{{ . | markdownify }}</label>
+                                        <input id="address" class="form-control" name="address" placeholder="{{ . }}" type="text">
+                                        {{ end }}
+                                    </div>
+                                    <div class="form-group col-md-4 col-sm-6">
+                                            {{ with .Site.Params.application.city }}
+                                            <label for="city" class="sr-only">{{ . | markdownify }}</label>
+                                            <input id="city" class="form-control" name="city" placeholder="{{ . }}" type="text">
+                                            {{ end }}
+                                        </div>
+                                    <div class="form-group col-md-2 col-sm-3">
+                                        {{ with .Site.Params.application.state }}
+                                        <label for="state" class="sr-only">{{ . | markdownify }}</label>
+                                        <input id="state" class="form-control" name="state" placeholder="{{ . }}" type="email">
+                                        {{ end }}
+                                    </div>
+                                    <div class="form-group col-md-2 col-sm-3">
+                                        {{ with .Site.Params.application.zip }}
+                                        <label for="zip" class="sr-only">{{ . | markdownify }}</label>
+                                        <input id="zip" class="form-control" name="zip" placeholder="{{ . }}" type="number" min="0" max="99999">
+                                        {{ end }}
+                                    </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="form-group form-family col-sm-12">
+                                    <label>With your initials, you agree that this is a contract between you and Heartland Greyhound Adoption, and, as such, is binding.
+                                        Do you agree to notify Heartland Greyhound Adoption if, for any reason, you find that you cannot keep your dog, and further agree that you will
+                                        not give or sell the dog to anyone else without Heartland Greyhound Adoption's expressed and written consent?
+                                    </label>
+                                    <br>                                    
+                                    <input class="form-control" id='family' type="text" placeholder="Place your initials here.">
+                                </div>
+                                <div class="form-group form-family col-sm-12">
+                                    <label>
+                                        With your initials, you agree that Heartland Greyhound Adoption reserves the right at any point during the interview process, 
+                                        to deny an adoption if our required conditions are not met or information supplied is falsified.
+                                    </label>
+                                    <br>                                    
+                                    <input class="form-control" id='family' type="text" placeholder="Place your initials here.">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                    <div>
+                                        <h3 style="margin-bottom:20px; margin-left:20px;">Personal Reference #1</h3>
+                                    </div>
+                                    <div class="form-group col-md-8 col-sm-6">
+                                        {{ with .Site.Params.application.name }}
+                                        <label for="name" class="sr-only">{{ . | markdownify }}</label>
+                                        <input id="name" class="form-control" name="name" placeholder="{{ . }}" type="text">
+                                        {{ end }}
+                                    </div>
+                                        <div class="form-group col-md-4 col-sm-6">
+                                            {{ with .Site.Params.application.phone }}
+                                            <label for="phone" class="sr-only">{{ . | markdownify }}</label>
+                                            <input id="phone" class="form-control" name="phone" placeholder="{{ . }}" type="tel">
+                                            {{ end }}
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <div class="form-group col-md-4 col-sm-12">
+                                            {{ with .Site.Params.application.address }}
+                                            <label for="address" class="sr-only">{{ . | markdownify }}</label>
+                                            <input id="address" class="form-control" name="address" placeholder="{{ . }}" type="text">
+                                            {{ end }}
+                                        </div>
+                                        <div class="form-group col-md-4 col-sm-6">
+                                                {{ with .Site.Params.application.city }}
+                                                <label for="city" class="sr-only">{{ . | markdownify }}</label>
+                                                <input id="city" class="form-control" name="city" placeholder="{{ . }}" type="text">
+                                                {{ end }}
+                                            </div>
+                                        <div class="form-group col-md-2 col-sm-3">
+                                            {{ with .Site.Params.application.state }}
+                                            <label for="state" class="sr-only">{{ . | markdownify }}</label>
+                                            <input id="state" class="form-control" name="state" placeholder="{{ . }}" type="email">
+                                            {{ end }}
+                                        </div>
+                                        <div class="form-group col-md-2 col-sm-3">
+                                            {{ with .Site.Params.application.zip }}
+                                            <label for="zip" class="sr-only">{{ . | markdownify }}</label>
+                                            <input id="zip" class="form-control" name="zip" placeholder="{{ . }}" type="number" min="0" max="99999">
+                                            {{ end }}
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <div>
+                                            <h3 style="margin-bottom:20px; margin-left:20px;">Personal Reference #2</h3>
+                                        </div>
+                                        <div class="form-group col-md-8 col-sm-6">
+                                            {{ with .Site.Params.application.name }}
+                                            <label for="name" class="sr-only">{{ . | markdownify }}</label>
+                                            <input id="name" class="form-control" name="name" placeholder="{{ . }}" type="text">
+                                            {{ end }}
+                                        </div>
+                                            <div class="form-group col-md-4 col-sm-6">
+                                                {{ with .Site.Params.application.phone }}
+                                                <label for="phone" class="sr-only">{{ . | markdownify }}</label>
+                                                <input id="phone" class="form-control" name="phone" placeholder="{{ . }}" type="tel">
+                                                {{ end }}
+                                            </div>
+                                    </div>
+                                    <div class="row">
+                                            <div class="form-group col-md-4 col-sm-12">
+                                                {{ with .Site.Params.application.address }}
+                                                <label for="address" class="sr-only">{{ . | markdownify }}</label>
+                                                <input id="address" class="form-control" name="address" placeholder="{{ . }}" type="text">
+                                                {{ end }}
+                                            </div>
+                                            <div class="form-group col-md-4 col-sm-6">
+                                                    {{ with .Site.Params.application.city }}
+                                                    <label for="city" class="sr-only">{{ . | markdownify }}</label>
+                                                    <input id="city" class="form-control" name="city" placeholder="{{ . }}" type="text">
+                                                    {{ end }}
+                                                </div>
+                                            <div class="form-group col-md-2 col-sm-3">
+                                                {{ with .Site.Params.application.state }}
+                                                <label for="state" class="sr-only">{{ . | markdownify }}</label>
+                                                <input id="state" class="form-control" name="state" placeholder="{{ . }}" type="email">
+                                                {{ end }}
+                                            </div>
+                                            <div class="form-group col-md-2 col-sm-3">
+                                                {{ with .Site.Params.application.zip }}
+                                                <label for="zip" class="sr-only">{{ . | markdownify }}</label>
+                                                <input id="zip" class="form-control" name="zip" placeholder="{{ . }}" type="number" min="0" max="99999">
+                                                {{ end }}
+                                            </div>
+                                    </div>
+                                <hr>
+                        <div class="row">
+                                <div class="form-group form-family col-sm-12">
+                                        <label>
+                                            Do you understand that your ownership of this dog will be subject to the conditions set
+                                            forth in this application, and that if the dog is judged to be kept in an unacceptable fastion
+                                            by Heartland Greyhound Adoption, Heartland Greyhound Adoption is entitled to regain ownership of the dog?
+                                        </label>
+                                        <br>                                    
+                                        <input class="form-control" id='family' type="text" placeholder="Place your initials here.">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-12">
+                                <label>
+                                    I hereby certify that all the information contained herin is true and correct and that submission of this form will be considered legally binding.
+                                </label>
+                                <br>
+                                <div class="col-sm-9">                                    
+                                    <input class="form-control" id='signature1' type="text" placeholder="Digital Signature Here.">
+                                </div>
+                                <div class="col-sm-3">
+                                    <input class="form-control" id="date1" type="date" placeholder="Date">
+                                </div>
+                                <div class="col-sm-9">                                    
+                                    <input class="form-control" id='signature2' type="text" placeholder="Digital Signature Here.">
+                                </div>
+                                <div class="col-sm-3">
+                                    <input class="form-control" id="date2" type="date" placeholder="Date">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="text-align:center;">
+                            <div class="col-sm-12" style="margin-bottom:15px;">
+                                <label>
+                                    There is a $25.00 non-refundable application fee required at the time this application is submitted. Upon approval 
+                                    of your application and placement of your greyhound, this $25.00 fee will be applied toward the adoption donation
+                                    of dogs aged 0-6 $275.00 and dogs aged 7+ $200.00 as stated in this contract.
+                                </label>
+                            </div>
+                            <div class="form-group" style="display: inline-block;">
+                                <input class="btn btn-primary btn-lg" value="APPLY" type="submit">
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                </div>
+            </div>
+        </section>
+
+        {{ if .Site.Params.footer.enable }}
+        	{{ partial "footer.html" .}}
+        {{ end }}
+
+        {{ partial "js.html" .}}
+        <script>
+            $(document).ready(function () {
+                $('.form-dwelling, .form-ownership, .form-fence, .form-stairs').show();
+                $('.form-dwelling-option, .form-permission-option, .form-fence-yes, .form-stairs-yes').hide();
+                
+                $('#dwelling-type').change(function () {
+                    var selected = $('#dwelling-type option:selected').text();
+                    $('.form-dwelling-option').toggle(selected == "Other");
+                });
+                $('#ownership').change(function () {
+                    var selected = $('#ownership option:selected').text();
+                    $('.form-permission-option').toggle(selected == "Rent");
+                });
+                $('#fence').change(function () {
+                    var selected = $('#fence option:selected').text();
+                    $('.form-fence-yes').toggle(selected == "Yes");
+                });
+                $('#stairs').change(function () {
+                    var selected = $('#stairs option:selected').text();
+                    $('.form-stairs-yes').toggle(selected == "Yes");
+                });
+            });
+        </script>
+    </body>
+</html>

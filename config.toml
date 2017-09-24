@@ -66,7 +66,7 @@ theme = "hugo-elate-theme"
   [[params.intro.item]]
     title = "Adopt"
     description = "Interested in adoption? See what the adoption process is like and our requirements."
-    url = "#"
+    url = "/adoption"
     button = "Learn Now"
     icon = "icon-rocket"
     img = "img_10.jpg"
@@ -114,7 +114,7 @@ theme = "hugo-elate-theme"
   [params.testimonials]
     enable = true
     title = "Testimonials"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "We take great pride in finding the perfect greyhound for you. When you adopt with HGA, you become a part of the family. <br>See what some of our family is saying."
 
     [[params.testimonials.item]]
       quote = "&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;"
@@ -262,7 +262,7 @@ theme = "hugo-elate-theme"
     
     # Available icons: http://simplelineicons.com/
     details = [
-        ["icon-home", "Heartland Greyhound Adoption: P.O. Box 342, Bondurant, IA, 50035"],
+        ["icon-home", "P.O. Box 342, Bondurant, IA, 50035"],
         ["icon-phone", "(515) 210-0459"],
         ["icon-envelope", "info@hga.dog"],
        # ["icon-globe", '<a href="http://freehtml5.co/" target="_blank">freehtml5.co</a>']
@@ -278,3 +278,19 @@ theme = "hugo-elate-theme"
   [params.footer]
     enable = true
     copyright = '&copy; Heartlang Greyhound Adoption. All Rights Reserved. <br>Created by Houston Perrett'
+
+
+  # Application section
+  [params.application]
+    name = "Name"
+    occupation = "Occupation"
+    address = "Address"
+    city = "City"
+    state = "State"
+    zip = "Zip Code"
+    email = "Email"
+    phone = "Phone"
+    employer = "Employer(s)"
+    age = "Age"
+    message = "Message"
+    button = "Send message"
