@@ -150,21 +150,22 @@ theme = "hugo-elate-theme"
     description = "Whether you're new to greyhounds or have been around them all your life, we are here to help."
 
     [[params.services.item]]
-      title = "Frequently Asked Questions"
+      title = "The Essentials"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
       icon = "icon-support"
 
     [[params.services.item]]
-      title = "Discussion"
+      title = "Frequently Asked Questions"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
       icon = "icon-bubbles"
+
     [[params.services.item]]
       title = "Blog"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
       icon = "icon-home"
 
       [[params.services.item]]
-      title = "Greyhound Data"
+      title = "GREYT Information"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"      
       icon = "icon-monitor"
 

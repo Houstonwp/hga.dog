@@ -1682,5 +1682,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-adoptables .fh5co-project-item:hover h2, #fh5co-adoptables .fh5co-project-item:hover span, #fh5co-work .fh5co-project-item:focus h2, #fh5co-work .fh5co-project-item:focus span {
   text-decoration: none !important;
 }
-
+.carousel-inner > .item > img {
+  margin: 0 auto;
+}
 /*# sourceMappingURL=style.css.map */
