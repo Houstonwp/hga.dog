@@ -233,26 +233,26 @@ theme = "hugo-elate-theme"
     background = "full_image_1.jpg"
 
     [[params.counters.item]]
-      description = "Finished projects"
+      description = "Board Members"
       icon = "icon-people"
       from = 0
-      to = 89
+      to = 7
       interval = 50
       speed = 5000
 
     [[params.counters.item]]
-      description = "Lines of code"
-      icon = "icon-code"
+      description = "Volunteers"
+      icon = "icon-people"
       from = 0
-      to = 2343409
+      to = 15
       interval = 50
       speed = 5000
 
     [[params.counters.item]]
-      description = "Cups of coffee"
-      icon = "icon-cup"
+      description = "Members"
+      icon = "icon-people"
       from = 0
-      to = 1302
+      to = 228
       interval = 50
       speed = 5000
 
@@ -280,7 +280,7 @@ theme = "hugo-elate-theme"
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; Heartlang Greyhound Adoption. All Rights Reserved. <br>Created by Houston Perrett'
+    copyright = '&copy; Heartland Greyhound Adoption. All Rights Reserved. <br>Created by Houston Perrett'
 
 
   # Application section
