@@ -12,21 +12,16 @@
 				</div>
 			</div>
 			<div class="row row-bottom-padded-sm">
-			{{ range first 1 (where (where .Site.Pages "Type" "event") ".Params.status" "eq" "A") }}
-				<div class="col-sm-6 col-xxs-12">
-					<a href={{ printf "events/%s" .Params.slug }} class="fh5co-project-item image-popup to-animate">
-						{{ range first 1 .Params.images }}
-						<img src={{ printf "%s" . }} alt="#" class="img-responsive">
-						{{ end }}
+					{{ $urlPre := "https://graph.facebook.com" }}
+					{{ $fb_key : = getenv HUGO_FB_KEY }}
+					{{ $fbevents := getJSON $urlPre "/v2.10/171731253749/events?access_token=" $fb_key "&fields=name,description,end_time,is_canceled,place,start_time,updated_time,cover,timezone&time_filter=upcoming" }}
+					{{ range first 3 $fbevents.data }}
+				<div class="col-md-4 col-sm-12 ">
+					<a href="events/" class="fh5co-project-item to-animate">
+						<img src="{{ .cover.source }}" alt="{{ .name }}" class="img-responsive">
 						<div class="fh5co-text">
-						<h2>{{ .Params.title }}</h2>
-						{{ if and (isset .Params "sex") (eq .Params.sex "M") }}
-							<span>I'm a beautiful {{lower .Params.age }} male.</span>
-						{{ else if and (isset .Params "sex") (eq .Params.sex "F") }}
-							<span>I'm a beautiful {{lower .Params.age }} female.</span>
-						{{ else }}
-							<span>I'm a beautiful {{lower .Params.age }} grey.</span>
-						{{ end }}
+						<h2>{{ .name }}</h2>
+							<span>{{ dateFormat "Monday, Jan 2, 2006" ( substr (string .start_time) 0 10) }}</span>
 						</div>
 					</a>
 				</div>				
