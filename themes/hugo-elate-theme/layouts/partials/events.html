@@ -13,8 +13,7 @@
 			</div>
 			<div class="row row-bottom-padded-sm">
 					{{ $urlPre := "https://graph.facebook.com" }}
-					{{ $fb_key : = getenv HUGO_FB_KEY }}
-					{{ $fbevents := getJSON $urlPre "/v2.10/171731253749/events?access_token=" $fb_key "&fields=name,description,end_time,is_canceled,place,start_time,updated_time,cover,timezone&time_filter=upcoming" }}
+					{{ $fbevents := getJSON $urlPre "/v2.10/171731253749/events?access_token=" (getenv "HUGO_FB_KEY") "&fields=name,description,end_time,is_canceled,place,start_time,updated_time,cover,timezone&time_filter=upcoming" }}
 					{{ range first 3 $fbevents.data }}
 				<div class="col-md-4 col-sm-12 ">
 					<a href="events/" class="fh5co-project-item to-animate">
