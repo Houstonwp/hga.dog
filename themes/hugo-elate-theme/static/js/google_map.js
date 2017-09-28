@@ -4,8 +4,13 @@ var google;
 function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-    // var myLatlng = new google.maps.LatLng(40.71751, -73.990922);
-    var myLatlng = new google.maps.LatLng(51.0825523,3.574402,11);
+    // var myLatlng = new google.maps.LatLng(40.71751, -73.990922);z
+    // Get the HTML DOM element that will contain your map 
+    // We are using a div with id="map" seen below in the <body>
+    var mapElement = document.getElementById('map');
+    var Latitude = mapElement.dataset.lat;
+    var Longitude = mapElement.dataset.long;
+    var myLatlng = new google.maps.LatLng(Latitude,Longitude);
     // 39.399872
     // -8.224454
     
@@ -23,9 +28,7 @@ function init() {
 
     
 
-    // Get the HTML DOM element that will contain your map 
-    // We are using a div with id="map" seen below in the <body>
-    var mapElement = document.getElementById('map');
+    
 
     // Create the Google Map using out element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
