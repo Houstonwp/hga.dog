@@ -16,8 +16,8 @@ body {
   font-weight: 300;
   font-size: 20px;
   line-height: 1.5;
-  color: #777777;
-  color: #7f7f7f;
+  color: #373D3F;
+  color: #373D3F;
   background: #fff;
   height: 100%;
   position: relative;
@@ -217,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #52d3aa !important;
   }
   #fh5co-header #navbar li a {
-    color: rgba(0, 0, 0, 0.5) !important;
+    color: rgba(0, 0, 0, 0.8) !important;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -245,7 +245,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-header #navbar li a {
   font-family: "Source Sans Pro", Arial, sans-serif;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
   position: relative;
   font-size: 19px;
   font-weight: 300;
@@ -334,7 +334,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #52d3aa;
 }
 #fh5co-header.navbar-fixed-top #navbar li a {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.8);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -555,6 +555,11 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-intro .fh5co-block h2 {
   font-size: 24px;
   font-weight: 400;
+}
+#fh5co-intro .fh5co-block .fh5co-text {
+  font-size: 18px;
+  font-weight: 200;
+  color: #373D3F;
 }
 #fh5co-intro .fh5co-block:hover > .overlay, #fh5co-intro .fh5co-block:focus > .overlay {
   opacity: 0;
@@ -1017,7 +1022,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 #fh5co-work .fh5co-project-item .fh5co-text span {
-  color: #b3b3b3;
+  color: #373D3F;
   font-size: 16px;
   font-weight: 400;
 }
@@ -1071,7 +1076,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0px;
 }
 .fh5co-person .fh5co-position {
-  color: #b3b3b3;
+  color: #373D3F;
   display: block;
   margin-bottom: 20px;
 }
@@ -1172,7 +1177,7 @@ h1, h2, h3, h4, h5, h6 {
 .section-heading h3 {
   font-weight: 300;
   line-height: 1.5;
-  color: #929292;
+  color: #373D3F;
 }
 @media screen and (max-width: 767px) {
   .section-heading h3 {
@@ -1286,7 +1291,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer {
   padding: 50px 0;
-  color: #7f7f7f;
+  color: #373D3F;
   position: relative;
 }
 #footer .gotop {
@@ -1521,7 +1526,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 #fh5co-events .fh5co-project-item .fh5co-text span {
-  color: #b3b3b3;
+  color: #373D3F;
   font-size: 16px;
   font-weight: 400;
 }
@@ -1663,7 +1668,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 #fh5co-adoptables .fh5co-project-item .fh5co-text span {
-  color: #b3b3b3;
+  color: #373D3F;
   font-size: 16px;
   font-weight: 400;
 }
