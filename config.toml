@@ -82,7 +82,7 @@ theme = "hugo-elate-theme"
     title = "Featured Post"
     description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
     url = "#"
-    footertext = '<a class= "btn btn-primary" href="http://plmd.me/" target="_blank"><span class="btn-home">READ MORE</span></a>'
+    footertext = '<a class= "btn btn-primary" href="blog/" target="_blank"><span class="btn-home">READ MORE</span></a>'
 
 
   # Work section
@@ -139,7 +139,7 @@ theme = "hugo-elate-theme"
     enable = true
     title = "Events"
     description = "Whether you've never met a greyhound or have five in your family, there is an event for you! See what is coming up soon."
-    footertext = '<a class= "btn btn-primary" href="http://plmd.me/" target="_blank"><span class="btn-home">SEE MORE</span></a>'
+    footertext = '<a class="btn btn-primary" href="events/" target="_self"><span class="btn-home">SEE MORE</span></a>'
 
 
 
@@ -153,33 +153,37 @@ theme = "hugo-elate-theme"
       title = "The Essentials"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
       icon = "icon-support"
+      link = "essentials"
 
     [[params.services.item]]
       title = "Frequently Asked Questions"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      description = "Greyhounds are a unique breed. They have their special quirks and needs that aren't like other dogs. Here are some of the most frequent questions we receive from potential adopters to help you."
       icon = "icon-bubbles"
+      link = "faq"
 
     [[params.services.item]]
       title = "Blog"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
       icon = "icon-home"
+      link = "blog"
 
       [[params.services.item]]
       title = "GREYT Information"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"      
       icon = "icon-monitor"
+      link = "greyt-information"
 
   # About section
   [params.about]
     enable = true
     title = "About"
     description = "Heartland Greyhound Adoption is a volunteer not-for-profit 501&#40;c&#41;(3) organization, formed and operating in central Iowa to promote the adoption of retired racing greyhounds."
-    footertext = '<a class= "btn btn-primary" href="http://plmd.me/" target="_blank"><span class="btn-home">READ MORE</span></a>'
+    footertext = '<a class= "btn btn-primary" href="about/" target="_blank"><span class="btn-home">READ MORE</span></a>'
 
     [[params.about.item]]
       name = "Jody Phelps"
       position = "President"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
+      description = ""
       img = "person1.jpg"
       alt = "Jody Phelps"
       social = [
@@ -187,9 +191,9 @@ theme = "hugo-elate-theme"
       ]
 
     [[params.about.item]]
-      name = "Rob Smith"
+      name = "Lori Murga"
       position = "Vice President"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
+      description = ""
       img = "person2.jpg"
       alt = "Person2"
       social = [
@@ -199,7 +203,7 @@ theme = "hugo-elate-theme"
     [[params.about.item]]
       name = "Lisa Helmick"
       position = "Secretary"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
+      description = ""
       img = "person3.jpg"
       alt = "Person3"
       social = [
@@ -207,9 +211,9 @@ theme = "hugo-elate-theme"
       ]
 
     [[params.about.item]]
-      name = "Larry Ben"
+      name = "Ryan Hasty"
       position = "Treasurer"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
+      description = ""
       img = "person3.jpg"
       alt = "Person3"
       social = [
@@ -219,7 +223,27 @@ theme = "hugo-elate-theme"
     [[params.about.item]]
       name = "Gretchen Meyer"
       position = "Member-at-Large"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts"
+      description = ""
+      img = "person3.jpg"
+      alt = "Person3"
+      social = [
+        ["icon-envelope", "#"]
+      ]
+
+    [[params.about.item]]
+      name = "Joe Shearer"
+      position = "Member-at-Large"
+      description = ""
+      img = "person3.jpg"
+      alt = "Person3"
+      social = [
+        ["icon-envelope", "#"]
+      ]
+
+    [[params.about.item]]
+      name = "Vacant"
+      position = "Member-at-Large"
+      description = ""
       img = "person3.jpg"
       alt = "Person3"
       social = [

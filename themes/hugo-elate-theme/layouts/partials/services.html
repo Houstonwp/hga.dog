@@ -12,13 +12,15 @@
 			</div>
 			<div class="row">
 			{{ range .Site.Params.services.item }}
-				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
-					<i class="icon to-animate-2 {{ .icon | markdownify }}"></i>
-					<h3>{{ .title | markdownify }}</h3>
-					<p>{{ .description | markdownify }}</p>
+				<div class="col-md-6 col-sm-12 fh5co-service to-animate" style="padding-bottom:10px;">
+					<a style="text-decoration:none!important; color:white;" href="resources/{{ .link }}">
+						<i class="icon to-animate-2 {{ .icon | markdownify }}"></i>
+						<h3>{{ .title | markdownify }}</h3>
+						<p>{{ .description | markdownify }}</p>
+					</a>
 				</div>
+				<div class="clearfix visible-sm-block"></div>
 			{{ end }}
-			<div class="clearfix visible-sm-block"></div>
 			</div>
 		</div>
 	</section>

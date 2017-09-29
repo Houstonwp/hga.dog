@@ -7,5 +7,3 @@ slug = "alumni"
 url = "/our-alumni/"
 layout = "alumni"
 +++
-
-## Content
