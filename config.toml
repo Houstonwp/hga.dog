@@ -129,7 +129,7 @@ theme = "hugo-elate-theme"
       alt = "Person2"
 
     [[params.testimonials.item]]
-      quote = "&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. &rdquo;"
+      quote = "&ldquo;HGA genuinely cares about every dog that comes to them. Since we've adopted our greyhound, HGA has been a second family to us.&rdquo;"
       person = 'Liz Cleaveland'
       img = "person3.jpg"
       alt = "Person3"
