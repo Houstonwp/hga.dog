@@ -1,0 +1,89 @@
+[[vet]]
+Name = "Starch Pet Hospital"
+Vet = ""
+Address = "2222 University Ave"
+City = "Des Moines"
+State = "Iowa"
+Zip ="50311"
+Phone = "515-283-1576"
+
+[[vet]]
+Name = "University West"
+Vet = ""
+Address = "8145 University Blvd"
+City = "Clive"
+State = "Iowa"
+Zip = "50325"
+Phone = "515-223-8185"
+
+[[vet]]
+Name = "Iowa State University Small Animal Hospital"
+Vet = "Dr. Mary Bergh"
+Address = "1809 S Riverside Dr"
+City = "Ames"
+State = "Iowa"
+Zip = "50010"
+Phone = "515-294-4900"
+
+[[vet]]
+Name = "Iowa Veterinary Specialties"
+Vet = ""
+Address = "6110 Creston Ave"
+City = "Des Moines"
+State = "Iowa"
+Zip = "50321"
+Phone = "515-280-3100"
+
+[[vet]]
+Name = "Pet Medical Center of Urbandale"
+Vet = "Dr. Kristin De Vries"
+Address = "4450 128th St"
+City = "Urbandale"
+State = "Iowa"
+Zip = "50323"
+Phone = "515-331-9035"
+
+[[vet]]
+Name = "Altoona Vet Hospital"
+Vet = "Dr. Sheri Morrissey"
+Address = "3070 8th St SW"
+City = "Altoona"
+State = "Iowa"
+Zip = "50009"
+Phone = "515-967-4281"
+
+[[vet]]
+Name = "Good Samaritan Pet Doctor"
+Vet = ""
+Address = "4847 N 72nd St"
+City = "Omaha"
+State = "Nebraska"
+Zip = "68134"
+Phone = "402-505-6911"
+
+[[vet]]
+Name = "Best Care Pet Hospital"
+Vet = ""
+Address = "3030 L St"
+City = "Omaha"
+State = "Nebraska"
+Zip = "68107"
+Phone = "402-734-1494"
+
+[[vet]]
+Name = "Pitts Veterinary Hospital"
+Vet = ""
+Address = "2225 Highway 2"
+City = "Lincoln"
+State = "Nebraska"
+Zip = "68502"
+Phone = "402-423-4120"
+
+[[vet]]
+Name = "Nebraska Animal Medical Center"
+Vet = ""
+Address = "5720 Old Cheney Rd"
+City = "Lincoln"
+State = "Nebraska"
+Zip = "68516"
+Phone = "402-423-9100"

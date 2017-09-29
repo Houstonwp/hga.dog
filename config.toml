@@ -67,7 +67,7 @@ theme = "hugo-elate-theme"
     title = "Adopt"
     description = "Interested in adoption? See what the adoption process is like and our requirements."
     url = "/adoption"
-    button = "Learn Now"
+    button = "Learn How"
     icon = "icon-rocket"
     img = "img_10.jpg"
 

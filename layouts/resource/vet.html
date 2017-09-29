@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        {{ partial "head.html" .}}
+    </head>
+    <body>
+        {{ partial "nav.html" .}}
+
+        <section id="fh5co-adoptables">
+            <div class="container">
+                <div class="row">
+                    <div style="margin-bottom:0; padding-bottom:0;" class="col-md-12 section-heading text-left">
+                        <h4>{{ dateFormat "January 2, 2006" .Params.date }}</h4>
+                        <h2 class=" left-border">{{ .Title | markdownify }}</h2>
+                        <div class="row">
+                                <div class="col-md-8 subtext">
+                                    <h3>Getting quality care for your greyhound is important. We're here to help.</h3>
+                                </div>
+                            </div>
+                        {{ if .Params.author }}
+                        <div class="row">
+                            <div class="col-md-8 subtext">
+                                <h3>Written by {{ .Params.author }}</h3>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 fh5co-adopt">
+                        <p style="font-weight:400;">{{ .Content | markdownify }}</p>
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                </div>
+                <div class="row">
+                    <h3>HGA’s Vet</h3>
+                    <p>Michael Henning is our point of contact and our go to for vetting of the greyhounds. He works two weeks at one and two weeks at the other.</p>
+                    {{ with $.Site.Data.vets }}
+                        {{ range first 2 .vet }}
+                        <div class="col-md-3 col-sm-6">
+                            <div class="fh5co-project-item">
+                                    <div class="fh5co-text">
+                                        <h2>{{ .Name }}</h2>
+                                        {{ if .Vet }}<span>{{ .Vet }}</span><br>{{ end }}
+                                        <span>{{ .Address }}</span><br>
+                                        <span>{{ .City }}, {{.State}}, {{.Zip}}</span><br>
+                                        <span>{{ .Phone }}</span>
+                                    </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                    {{ end }}
+                </div>
+                <div class="row">
+                        <h3>HGA’s After Hours and Weekend Vet (also for all bone surgeries)</h3><br>
+                        {{ with $.Site.Data.vets }}
+                            {{ range first 2 (after 2 .vet) }}
+                            <div class="col-md-3 col-sm-6">
+                                <div class="fh5co-project-item">
+                                        <div class="fh5co-text">
+                                            <h2>{{ .Name }}</h2>
+                                            {{ if .Vet }}<span>{{ .Vet }}</span><br>{{ end }}
+                                            <span>{{ .Address }}</span><br>
+                                            <span>{{ .City }}, {{.State}}, {{.Zip}}</span><br>
+                                            <span>{{ .Phone }}</span>
+                                        </div>
+                                </div>
+                            </div>
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                    <div class="row">
+                            <h3>Here are some other good greyhounds vets that we've had experience with.</h3><br>
+                            {{ with $.Site.Data.vets }}
+                                {{ range $i, $e := after 4 .vet }}
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="fh5co-project-item">
+                                            <div class="fh5co-text">
+                                                <h2>{{ .Name }}</h2>
+                                                {{ if .Vet }}<span>{{ .Vet }}</span><br>{{ end }}
+                                                <span>{{ .Address }}</span><br>
+                                                <span>{{ .City }}, {{.State}}, {{.Zip}}</span><br>
+                                                <span>{{ .Phone }}</span>
+                                            </div>
+                                    </div>
+                                </div>
+                                {{ if modBool (add $i 1) 4 }}
+                                <div class="clearfix"></div>
+                                {{ end }}
+                                {{ end }}
+                            {{ end }}
+                        </div>
+            </div>
+        </section>
+
+        {{ if .Site.Params.footer.enable }}
+        	{{ partial "footer.html" .}}
+        {{ end }}
+
+        {{ partial "js.html" .}}
+    </body>
+</html>
