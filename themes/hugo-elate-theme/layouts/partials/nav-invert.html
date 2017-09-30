@@ -1,0 +1,56 @@
+    <header role="banner" id="fh5co-header2" class="navbar-fixed-top fh5co-animated slideInDown">
+        <div class="container">
+            <!-- <div class="row"> -->
+            <nav class="navbar navbar-invert">
+                <div class="navbar-header small">
+                    <!-- Mobile Toggle Menu Button -->
+                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                    <!-- <img class="navbar-logo" src="/images/HGA_LogoExport.png" alt="Heartland Greyhound Adoption" href="/index.html" /> -->
+                    <a class="navbar-brand" href="{{$.Site.BaseURL}}index.html">Heartland Greyhound</a> 
+                </div>
+                <div class="navbar-header medium">
+                    <!-- Mobile Toggle Menu Button -->
+                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                    <!-- <img class="navbar-logo" src="/images/HGA_LogoExport.png" alt="Heartland Greyhound Adoption" href="/index.html" /> -->
+                    <a class="navbar-brand" href="{{$.Site.BaseURL}}index.html">{{ with .Site.Params.navigation.brand }}{{ . | markdownify }}{{ end }}</a> 
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+
+                    {{ range .Site.Menus.prepend }}
+                        <li><a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a></li>
+                    {{ end }}
+                    
+                    {{ if .Site.Params.work.enable }}
+                    <li><a href="#" data-nav-section="work"><span>{{ with .Site.Params.navigation.work }}{{ . | markdownify }}{{ end }}</span></a></li> 
+                    {{ end }}
+
+                    {{ if .Site.Params.events.enable }}
+                    <li><a href="#" data-nav-section="events"><span>{{ with .Site.Params.navigation.events }}{{ . | markdownify }}{{ end }}</span></a></li> 
+                    {{ end }}
+
+                    {{ if .Site.Params.testimonials.enable }}
+                    <li><a href="#" data-nav-section="testimonials"><span>{{ with .Site.Params.navigation.testimonials }}{{ . | markdownify }}{{ end }}</span></a></li> 
+                    {{ end }}
+
+                    {{ if .Site.Params.services.enable }}
+                    <li><a href="#" data-nav-section="services"><span>{{ with .Site.Params.navigation.services }}{{ . | markdownify }}{{ end }}</span></a></li> 
+                    {{ end }}
+
+                    {{ if .Site.Params.about.enable }}
+                    <li><a href="#" data-nav-section="about"><span>{{ with .Site.Params.navigation.about }}{{ . | markdownify }}{{ end }}</span></a></li> 
+                    {{ end }}
+
+                    {{ if .Site.Params.contact.enable }}
+                    <li><a href="#" data-nav-section="contact"><span>{{ with .Site.Params.navigation.contact }}{{ . | markdownify }}{{ end }}</span></a></li> 
+                    {{ end }}
+
+                    {{ range .Site.Menus.postpend }}
+                        <li><a href="{{ .URL }}"><span>{{ .Name | markdownify }}</span></a></li>
+                    {{ end }}
+                </ul>
+            </div>
+        </nav>
+        <!-- </div> -->
+    </div>
+</header>

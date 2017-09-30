@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        {{ partial "head.html" .}}
+    </head>
+    <body>
+		{{ partial "nav-invert.html" .}}
+		
+		<section id="testimonials">
+				<div class="container" style="margin-top:40px">
+					<div class="row">
+						<div class="col-md-12 section-heading text-center">
+							<h2 class="to-animate">{{ with $.Site.Params.testimonials.title }}{{ . | markdownify }}{{ end }}</h2>
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 subtext to-animate">
+									<h3>{{ with $.Site.Params.testimonials.description }}{{ . | markdownify }}{{ end }}</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+					{{ range $.Site.Data.testimonials.testimonials }}
+						<div class="col-md-4">
+							<div class="box-testimony">
+								<blockquote class="to-animate-2">
+									<p>{{ .quote | markdownify}}</p>
+								</blockquote>
+								<div class="author to-animate">
+									<figure><img src="{{ $.Site.BaseURL }}images/{{ .img }}" alt="{{ .alt }}"></figure>
+									<p>{{ .person | markdownify }}</p>
+								</div>
+							</div>
+						</div>
+					{{ end }}
+					</div>
+				</div>
+			</section>
+	{{ if .Site.Params.footer.enable }}
+	{{ partial "footer.html" .}}
+{{ end }}
+
+{{ partial "js.html" .}}
+</body>
+</html>

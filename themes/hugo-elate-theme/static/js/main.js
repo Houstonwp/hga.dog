@@ -500,6 +500,48 @@
 		}
 	};
 
+	var testimonialsAnimate = function() {
+		var testimonial = $('#testimonials');
+		if ( testimonial.length > 0 ) {	
+
+			testimonial.waypoint( function( direction ) {
+										
+				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+
+					var sec = testimonial.find('.to-animate').length,
+						sec = parseInt((sec * 200) - 400);
+
+					setTimeout(function() {
+						testimonial.find('.to-animate').each(function( k ) {
+							var el = $(this);
+							
+							setTimeout ( function () {
+								el.addClass('fadeInUp animated');
+							},  k * 200, 'easeInOutExpo' );
+							
+						});
+					}, 200);
+
+					setTimeout(function() {
+						testimonial.find('.to-animate-2').each(function( k ) {
+							var el = $(this);
+							
+							setTimeout ( function () {
+								el.addClass('fadeInDown animated');
+							},  k * 200, 'easeInOutExpo' );
+							
+						});
+					}, sec);
+
+					
+					$(this.element).addClass('animated');
+						
+				}
+			} , { offset: '80%' } );
+
+		}
+	};
+
 	
 	
 
@@ -533,6 +575,8 @@
 		countersAnimate();
 		contactAnimate();
 		adoptablesAnimate();
+		testimonialsAnimate();
+		
 		
 			
 	});
