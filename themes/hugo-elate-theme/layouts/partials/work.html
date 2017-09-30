@@ -12,7 +12,7 @@
 				<h2 class="to-animate">Our Adoptables</h2>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 subtext to-animate">
-						<h3>We currently have {{ $available }} greyhounds available for adoption.<br>{{ with .Site.Params.work.description }}{{ . | markdownify }}{{ end }}</h3>
+						<h3>We currently have {{ $available }} {{ if gt $available 1}}{{ pluralize "greyhound" }}{{ else }}greyhound{{ end }} available for adoption.<br>{{ with .Site.Params.work.description }}{{ . | markdownify }}{{ end }}</h3>
 					</div>
 				</div>
 			</div>
@@ -86,7 +86,15 @@
 														{{ replace $string $suffix "" | safeHTML }}
 													</div>
 												</div>
+												<br>
+												<div class="row">
+												<div class="col-sm-12 text-center">
+													<a class="btn btn-primary" href="adoption/" target="_self"><span class="btn-home">Learn How to Adopt Me</span></a>											
+												</div>
 											</div>
+											</div>
+											<br>
+											
 								<hr>
 								<div class="text-center">
 										<h2>Inquire</h2>

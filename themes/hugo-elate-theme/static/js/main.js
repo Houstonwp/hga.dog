@@ -480,6 +480,17 @@
 						});
 					}, 200);
 
+					setTimeout(function() {
+						services.find('.to-animate-2').each(function( k ) {
+							var el = $(this);
+							
+							setTimeout ( function () {
+								el.addClass('bounceIn animated');
+							},  k * 200, 'easeInOutExpo' );
+							
+						});
+					}, sec);
+
 					
 					$(this.element).addClass('animated');
 						
