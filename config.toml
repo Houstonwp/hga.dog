@@ -276,7 +276,7 @@ theme = "hugo-elate-theme"
       description = "Members"
       icon = "icon-people"
       from = 0
-      to = 228
+      to = 236
       interval = 50
       speed = 5000
 
