@@ -1,8 +1,6 @@
-{{ $urlPre := "http://api.petfinder.com" }} 
-{{ $adoptables := getJSON $urlPre "/shelter.getPets?key=4737b1e3aed2a7cb1c6881fd3dbd5a23&id=IA91&status=X&format=json&count=1000" }}
-{{ $alumni := index $adoptables.petfinder.lastOffset "$t" }}
-
-<section id="fh5co-counters" style="background-image: url(images/{{ .Site.Params.counters.background }});" data-stellar-background-ratio="0.5">
+	<section id="fh5co-counters" style="background-image: url(images/{{ .Site.Params.counters.background }});" data-stellar-background-ratio="0.5">
+		{{ $list := (where (where .Site.Pages "Type" "greyhounds") ".Params.status" "eq" "X")}}
+		{{ $len := len $list}}
 		<div class="fh5co-overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -11,7 +9,7 @@
 				</div>
 			</div>
 			<div class="row">
-			{{ range first 3 .Site.Params.counters.item }}
+			{{ range .Site.Params.counters.item }}
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<div class="fh5co-counter to-animate">
 						<i class="fh5co-counter-icon {{ .icon }} to-animate-2"></i>
@@ -20,13 +18,6 @@
 					</div>
 				</div>
 			{{ end }}
-			<div class="col-md-3 col-sm-6 col-xs-12">
-				<div class="fh5co-counter to-animate">
-					<i class="fh5co-counter-icon icon-people to-animate-2"></i>
-					<span class="fh5co-counter-number js-counter" data-from="0" data-to="{{ $alumni }}" data-speed="5000" data-refresh-interval="50">{{ $alumni }}</span>
-					<span class="fh5co-counter-label">Happy Tails</span>
-				</div>
-			</div>
 			</div>
 		</div>
 	</section>
