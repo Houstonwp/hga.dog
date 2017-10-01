@@ -4,7 +4,7 @@ description = ""
 date = 2017-09-28T20:58:18-05:00
 lastmod = 2017-09-28T20:58:18-05:00
 draft = false
-type = "resource"
+type = "resources"
 slug = "necessities"
 +++
 

@@ -19,6 +19,9 @@
 						<p>{{ .description | markdownify }}</p>
 					</a>
 				</div>
+				{{ if modBool (add $i 1) 2 }}
+				<div class="clearfix visible-md-block visible-lg-block"></div>
+			{{ end }}
 				<div class="clearfix visible-sm-block"></div>
 			{{ end }}
 			</div>
