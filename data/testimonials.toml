@@ -1,18 +1,18 @@
 # Testimonials section
-[[testimonials]]
-    quote = "&ldquo;We wouldn't have met the two most amazing Greyhounds in the world, Flynn & Maggie, without Heartland Greyhound Adoption. They are a wonderful organization that puts the best interest of the dogs ahead of anything else. We are grateful for all their hard work and dedication to the breed.&rdquo;"
-    person = 'Sarah Ryan'
-    img = "person1.jpg"
-    alt = "Person1"
+    [[testimonials]]
+        quote = "&ldquo;We wouldn't have met the two most amazing Greyhounds in the world, Flynn & Maggie, without Heartland Greyhound Adoption. They are a wonderful organization that puts the best interest of the dogs ahead of anything else. We are grateful for all their hard work and dedication to the breed.&rdquo;"
+        person = 'Sarah Ryan'
+        img = "person1.jpg"
+        alt = "Person1"
 
-[[testimonials]]
-    quote = "&ldquo;There are many wonderful greyhound adoption groups, but for me, Heartland stands just a little bit taller mainly because of all the good foster work they do to make sure that whenever a hound is placed permanently with a family, that dog will likely have found their &ldquo;forever&rdquo; home. Kudos!&rdquo;"
-    person = 'Barb Biffle Bennett'
-    img = "person2.jpg"
-    alt = "Person2"
+    [[testimonials]]
+        quote = "&ldquo;There are many wonderful greyhound adoption groups, but for me, Heartland stands just a little bit taller mainly because of all the good foster work they do to make sure that whenever a hound is placed permanently with a family, that dog will likely have found their &ldquo;forever&rdquo; home. Kudos!&rdquo;"
+        person = 'Barb Biffle Bennett'
+        img = "person2.jpg"
+        alt = "Person2"
 
-[[testimonials]]
-    quote = "&ldquo;HGA genuinely cares about every dog that comes to them. Since we've adopted our greyhound, HGA has been a second family to us.&rdquo;"
-    person = 'Liz Cleaveland'
-    img = "person3.jpg"
-    alt = "Person3"
+    [[testimonials]]
+        quote = "&ldquo;HGA genuinely cares about every dog that comes to them. Since we've adopted our greyhound, HGA has been a second family to us.&rdquo;"
+        person = 'Liz Cleaveland'
+        img = "person3.jpg"
+        alt = "Person3"
