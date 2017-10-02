@@ -150,8 +150,8 @@ theme = "hugo-elate-theme"
     description = "Whether you're new to greyhounds or have been around them all your life, we are here to help."
 
     [[params.services.item]]
-      title = "The Essentials"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      title = "Adoption Essentials"
+      description = "It's important to have things in order before adopting a greyhound. The essentials are what we believe to be vital to your success as a new member of the cult including supplies to have, finding a vet, and bringing home your new family member."
       icon = "icon-support"
       link = "essentials"
 

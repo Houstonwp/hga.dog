@@ -2040,4 +2040,29 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0s;
 }
 
+.content-item {
+  display: block;
+  width: 100%;
+  position: relative;
+  top: 0;
+  background: #fff;
+  overflow: hidden;
+  z-index: 9;
+  border-radius: 12px;  
+  margin-bottom: 20px;
+}
+
+.content-item h2 {
+  font-size:40px;
+  color:#373D3F;
+  margin-top: 10px;
+}
+
+.content-item .img-rounded {
+  border-radius: 12px !important;
+}
+
+.content-item .btn-wrap {
+  margin-bottom: 10px;
+}
 /*# sourceMappingURL=style.css.map */

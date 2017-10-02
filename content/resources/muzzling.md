@@ -2,12 +2,13 @@
 title = "Learning to Love Your Greyhound’s Muzzle"
 description = ""
 author = "Lynda Radecki"
+thumbnail = ""
 date = 2017-09-28T21:32:04-05:00
 lastmod = 2017-09-28T21:32:04-05:00
 draft = false
 type = "resources"
-categories = ["Care and Training", "Tips and Advice"]
-tags = ["muzzling"]
+categories = ["Care and Maintenance"]
+tags = ["Care", "Safety"]
 slug = "learning-to-love-your-greyhounds-muzzle"
 +++
 

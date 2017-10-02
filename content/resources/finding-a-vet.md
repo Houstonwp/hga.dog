@@ -2,12 +2,13 @@
 title = "Finding a Vet"
 description = ""
 author = ""
+thumbnail = ""
 date = 2017-09-29T16:26:10-05:00
 lastmod = 2017-09-29T16:26:10-05:00
 draft = false
 type = "resources"
-categories = ["essentials"]
-tags = []
+categories = ["Health and Wellness", "Essentials"]
+tags = ["Vet"]
 slug = "finding-a-vet"
 layout = "vet"
 +++
