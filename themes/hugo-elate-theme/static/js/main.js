@@ -554,6 +554,25 @@
 		}
 	};
 
+	// Burger Menu
+	var burgerMenu2 = function() {
+		
+				$('body').on('click', '.js-fh5co-nav-toggle', function(event){
+		
+					event.preventDefault();
+		
+					if ( $('#navbar2').is(':visible') ) {
+						$(this).removeClass('active');
+					} else {
+						$(this).addClass('active');	
+					}
+		
+					
+					
+				});
+		
+			};
+
 	
 	
 
@@ -566,6 +585,8 @@
 		parallax();
 
 		burgerMenu();
+
+		burgerMenu2();
 
 		clickMenu();
 
