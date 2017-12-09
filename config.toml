@@ -161,18 +161,6 @@ theme = "hugo-elate-theme"
       icon = "icon-bubbles"
       link = "faq"
 
-    [[params.services.item]]
-      title = "Blog"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-home"
-      link = "blog"
-
-      [[params.services.item]]
-      title = "GREYT Information"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"      
-      icon = "icon-monitor"
-      link = "greyt-information"
-
   # About section
   [params.about]
     enable = true
@@ -186,9 +174,7 @@ theme = "hugo-elate-theme"
       description = ""
       img = "person1.jpg"
       alt = "Jody Phelps"
-      social = [
-        ["icon-envelope", "mailto:president@hga.dog"],
-      ]
+ 
 
     [[params.about.item]]
       name = "Lori Murga"
@@ -196,9 +182,7 @@ theme = "hugo-elate-theme"
       description = ""
       img = "person2.jpg"
       alt = "Person2"
-      social = [
-        ["icon-envelope", "#"]
-      ]
+     
 
     [[params.about.item]]
       name = "Lisa Helmick"
@@ -206,9 +190,7 @@ theme = "hugo-elate-theme"
       description = ""
       img = "person3.jpg"
       alt = "Person3"
-      social = [
-        ["icon-envelope", "#"]
-      ]
+     
 
     [[params.about.item]]
       name = "Ryan Hasty"
@@ -216,9 +198,7 @@ theme = "hugo-elate-theme"
       description = ""
       img = "person3.jpg"
       alt = "Person3"
-      social = [
-        ["icon-envelope", "#"]
-      ]
+      
 
     [[params.about.item]]
       name = "Gretchen Meyer"
@@ -226,9 +206,7 @@ theme = "hugo-elate-theme"
       description = ""
       img = "person3.jpg"
       alt = "Person3"
-      social = [
-        ["icon-envelope", "#"]
-      ]
+      
 
     [[params.about.item]]
       name = "Joe Shearer"
@@ -236,9 +214,7 @@ theme = "hugo-elate-theme"
       description = ""
       img = "person3.jpg"
       alt = "Person3"
-      social = [
-        ["icon-envelope", "#"]
-      ]
+      
 
     [[params.about.item]]
       name = "Vacant"
@@ -246,9 +222,7 @@ theme = "hugo-elate-theme"
       description = ""
       img = "person3.jpg"
       alt = "Person3"
-      social = [
-        ["icon-envelope", "#"]
-      ]
+      
 
   # Counters section
   [params.counters]
@@ -299,7 +273,7 @@ theme = "hugo-elate-theme"
     details = [
         ["icon-home", "P.O. Box 342, Bondurant, IA, 50035"],
         ["icon-phone", "(515) 210-0459"],
-        ["icon-envelope", "info@hga.dog"],
+        ["icon-envelope", "support@hga.dog"],
        # ["icon-globe", '<a href="http://freehtml5.co/" target="_blank">freehtml5.co</a>']
       ]
 
