@@ -1,5 +1,5 @@
 {{ $urlPre := "http://api.petfinder.com" }} 
-{{ $adoptables := getJSON $urlPre "/shelter.getPets?key=4737b1e3aed2a7cb1c6881fd3dbd5a23&id=IA91&status=A&format=json" }}
+{{ $adoptables := getJSON $urlPre "/shelter.getPets?key=" (getenv "HUGO_PF_KEY") "&id=IA91&status=A&format=json" }}
 {{ $.Scratch.Set "M" "male" }}
 {{ $.Scratch.Set "F" "female" }}
 {{ $.Scratch.Set "" "greyhound"}}
