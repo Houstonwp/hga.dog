@@ -1,10 +1,11 @@
 +++
 title = "Frequently Asked Questions"
 description = ""
+thumbnail = ""
 date = 2017-09-28T20:10:25-05:00
 lastmod = 2017-09-28T20:10:25-05:00
 draft = false
-type = "resource"
+type = "resources"
 slug = "faq"
 +++
 

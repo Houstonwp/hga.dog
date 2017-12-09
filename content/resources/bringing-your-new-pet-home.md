@@ -2,11 +2,12 @@
 title = "Bringing Your New Pet Home"
 description = ""
 author = ""
+thumbnail = "grey-race"
 date = 2017-09-29T16:27:50-05:00
 lastmod = 2017-09-29T16:27:50-05:00
 draft = false
-type = "resource"
-categories = ["essentials"]
+type = "resources"
+categories = ["Adoption", "Essentials"]
 tags = []
 slug = "bringing-your-new-pet-home"
 +++

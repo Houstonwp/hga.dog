@@ -1,10 +1,12 @@
 +++
 title = "Necessities"
-description = ""
+description = "Those considering adopting a retired greyhound can buy supplies in advance to help their grey feel right at home."
+thumbnail = "grey-coat"
 date = 2017-09-28T20:58:18-05:00
 lastmod = 2017-09-28T20:58:18-05:00
 draft = false
-type = "resource"
+type = "resources"
+categories = ["Supplies and Things", "Essentials"]
 slug = "necessities"
 +++
 

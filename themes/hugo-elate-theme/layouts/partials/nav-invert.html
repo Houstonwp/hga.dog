@@ -4,13 +4,13 @@
             <nav class="navbar navbar-invert">
                 <div class="navbar-header small">
                     <!-- Mobile Toggle Menu Button -->
-                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar2" aria-expanded="false" aria-controls="navbar2"><i></i></a>
                     <!-- <img class="navbar-logo" src="/images/HGA_LogoExport.png" alt="Heartland Greyhound Adoption" href="/index.html" /> -->
                     <a class="navbar-brand" href="{{$.Site.BaseURL}}index.html">Heartland Greyhound</a> 
                 </div>
                 <div class="navbar-header medium">
                     <!-- Mobile Toggle Menu Button -->
-                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar2" aria-expanded="false" aria-controls="navbar2"><i></i></a>
                     <!-- <img class="navbar-logo" src="/images/HGA_LogoExport.png" alt="Heartland Greyhound Adoption" href="/index.html" /> -->
                     <a class="navbar-brand" href="{{$.Site.BaseURL}}">{{ with .Site.Params.navigation.brand }}{{ . | markdownify }}{{ end }}</a> 
                 </div>
@@ -34,7 +34,15 @@
                     {{ end }}
 
                     {{ if .Site.Params.services.enable }}
-                    <li><a href="{{$.Site.BaseURL }}resources/" data-nav-section="resources"><span>{{ with .Site.Params.navigation.services }}{{ . | markdownify }}{{ end }}</span></a></li> 
+                    <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" data-nav-section="resources" class="dropdown-toggle"><span>{{ with .Site.Params.navigation.services }}{{ . | markdownify }}{{ end }} <b class="caret"></b></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{$.Site.BaseURL }}resources/essentials/">Adoption Essentials</a></li>
+                                <li><a href="{{$.Site.BaseURL }}resources/faq">Frequently Asked Questions</a></li>
+                                <li><a href="{{$.Site.BaseURL }}resources/blog">Blog</a></li>
+                                <li><a href="{{$.Site.BaseURL }}resources/greyt-information">Greyt Information</a></li>
+                            </ul>
+                        </li>
                     {{ end }}
 
                     {{ if .Site.Params.about.enable }}

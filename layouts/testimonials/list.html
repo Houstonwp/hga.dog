@@ -23,8 +23,8 @@
 						</div>
 					</div>
 					<div class="row">
-					{{ range $.Site.Data.testimonials.testimonials }}
-						<div class="col-md-4">
+					{{ range $i, $e := $.Site.Data.testimonials.testimonials }}
+						<div class="col-md-4 col-sm-12">
 							<div class="box-testimony">
 								<blockquote class="to-animate-2">
 									<p>{{ .quote | markdownify}}</p>
@@ -35,6 +35,10 @@
 								</div>
 							</div>
 						</div>
+							{{ if modBool (add $i 1) 3 }}
+							<div class="clearfix visible-md-block visible-lg-block"></div>
+							{{ end }}
+		
 					{{ end }}
 					</div>
 				</div>
