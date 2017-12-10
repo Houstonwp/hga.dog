@@ -80,7 +80,7 @@ theme = "hugo-elate-theme"
   [params.intro.posts]
     enable = true
     title = "Featured Post"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "Check out the latest HGA news, find helpful tips, and share greyhounds stories."
     url = "#"
     footertext = '<a class= "btn btn-primary" href="blog/" target="_blank"><span class="btn-home">READ MORE</span></a>'
 

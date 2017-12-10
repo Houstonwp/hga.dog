@@ -6,6 +6,7 @@
 <html>
     <head>
         {{ partial "head.html" .}}
+        <script src="https://checkout.stripe.com/checkout.js"></script>
     </head>
     <body>
         {{ partial "nav-invert.html" .}}
@@ -465,6 +466,15 @@
                                 <input class="btn btn-primary btn-lg" value="APPLY" type="submit">
                             </div>
                         </div>
+                        <script
+                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="pk_test_XallSFtwFIHPcsjKJ1xLo8r5"
+                        data-amount="999"
+                        data-name="Demo Site"
+                        data-description="Widget"
+                        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                        data-locale="auto">
+                      </script>
                     </form>
                     </div>
                     <div class="clearfix visible-sm-block"></div>

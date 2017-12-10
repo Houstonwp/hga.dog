@@ -31,9 +31,11 @@
 						<div class="modal-dialog">
 							<div class="modal-content">
 								<div class="modal-header text-center">
+									<div class="row">
 										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 												<span aria-hidden="true">&times;</span>
-											  </button>
+										</button>
+									</div>
 									<img src="{{ .cover.source }}" alt="{{ .name }}" class="img-responsive">
 									<h2>{{ .name }}</h2>
 									<h3>{{ dateFormat "Monday, January 2, 2006" ( substr (string .start_time) 0 10) }}</h3>	
