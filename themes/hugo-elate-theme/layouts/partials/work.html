@@ -24,10 +24,8 @@
 				{{ $description := index .description "$t"}}
 				{{ $age := index .age "$t" }}
 				{{ $sex := index .sex "$t" }}
-				{{ $images := .media.photos.photo }} 
-				{{ $img1:= index (index $images 2) "$t" }} 
-				{{ $img2 := index (index $images 7) "$t" }} 
-				{{ $img3 := index (index $images 12) "$t" }}
+				
+				{{ $img1 := index (index .media.photos.photo 2) "$t" }} 
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<a href="#" data-toggle="modal" data-target="#{{ $id }}" class="fh5co-project-item to-animate">
 						<div style="max-width:500px;padding-top:75%;position:relative;">
@@ -65,15 +63,15 @@
 													<div class="item active" style="max-width:500px;padding-top:75%;">
 															<img style="position:absolute;top:0;left:0;" src="{{ . }}" alt="{{ $title }}" class="img-responsive img-rounded">
 													</div>
-													{{ end }} {{ with $img2 }}
+													{{ end }} {{ if isset .media.photos.photo 7 }} {{ with index (index .media.photos.photo 7) "$t" }}
 													<div class="item" style="max-width:500px;padding-top:75%;">
 															<img style="position:absolute;top:0;left:0;" src="{{ . }}" alt="{{ $title }}" class="img-responsive img-rounded">
 													</div>
-													{{ end }} {{ with $img3 }}
+													{{ end }} {{ end }} {{ if isset .media.photos.photo 12 }} {{ with index (index .media.photos.photo 12) "$t" }}
 													<div class="item" style="max-width:500px;padding-top:75%;">
 															<img style="position:absolute;top:0;left:0;" src="{{ . }}" alt="{{ $title }}" class="img-responsive img-rounded">
 													</div>
-													{{ end }}
+													{{ end }} {{ end }}
 							
 												</div>
 											</div>
