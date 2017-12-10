@@ -6,7 +6,6 @@
 <html>
     <head>
         {{ partial "head.html" .}}
-        <script src="https://checkout.stripe.com/checkout.js"></script>
     </head>
     <body>
         {{ partial "nav-invert.html" .}}
@@ -467,11 +466,11 @@
                                     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                                     data-key="pk_test_XallSFtwFIHPcsjKJ1xLo8r5"
                                     data-amount="2500"
-                                    data-name="Heartland Greyhound Adoption"
-                                    data-description="Adoption Fee"
+                                    data-name="Application Fee"
+                                    data-description="Heartland Greyhound Adoption"
                                     data-billing-address="true"
-                                    allowRememberMe="false"
-                                    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                                    data-allow-remember-me="false"
+                                    data-image="https://test.hga.dog/images/HGA_LogoExport.png"
                                     data-locale="auto">
                                   </script>
                                 
