@@ -82,7 +82,7 @@ theme = "hugo-elate-theme"
     title = "Featured Post"
     description = "Check out the latest HGA news, find helpful tips, and share greyhounds stories."
     url = "#"
-    footertext = '<a class= "btn btn-primary" href="blog/" target="_blank"><span class="btn-home">READ MORE</span></a>'
+    footertext = '<a class= "btn btn-primary" href="blog/" target="_self"><span class="btn-home">READ MORE</span></a>'
 
 
   # Work section

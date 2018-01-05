@@ -27,9 +27,9 @@
                 <div class="col-md-6 col-md-pull-6 col-sm-12">
                     <h2>{{ .Title |markdownify }}</h2>
                     {{ if .Params.author }}
-                    <h3>Written by {{ .Params.author }} {{ dateFormat "January 2, 2006" .Params.date }}</h3>
+                    <h3 style="color:black;">Written by {{ .Params.author }} {{ dateFormat "January 2, 2006" .Params.date }}</h3>
                     {{ end }}
-                    <p>{{ .Params.description }}</p>
+                    <p style="color:black;">{{ .Params.description }}</p>
                     <div class="btn-wrap">
                         <a class="btn btn-primary" href="{{.Permalink }}" target="_self"><span class="btn-home">READ MORE</span></a>
                     </div>
