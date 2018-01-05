@@ -28,7 +28,7 @@
 			<div class="clearfix visible-sm-block"></div>
 			<div class="row" style="width:100%;">
 				<div class="col-md-12 text-center to-animate">
-					{{ range first 1 where .Data.Pages.ByDate "Section" "blog" }}
+					{{ range first 1 (where .Data.Pages.ByDate "Section" "blog") }}
 					<p>{{ .Title | markdownify }}</p>
 					{{ end }}
 				</div>
