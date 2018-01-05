@@ -14,10 +14,10 @@
 				<div class="container" style="margin-top:40px">
 					<div class="row">
 						<div class="col-md-12 section-heading text-center">
-							<h2 class="to-animate">{{ with $.Site.GetPage "Section" "blog" }}{{ .Title | markdownify }}{{ end }}</h2>
+							<h2 class="to-animate">{{ .Title | markdownify }}</h2>
 							<div class="row">
 								<div class="col-md-8 col-md-offset-2 subtext to-animate">
-									<h3>{{ with $.Site.GetPage "Section" "blog" }}{{ .Description | markdownify }}{{ end }}</h3>
+									<h3>{{ .Description | markdownify }}</h3>
 								</div>
 							</div>
 						</div>
