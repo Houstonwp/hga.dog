@@ -1,5 +1,5 @@
 # Page settings
-baseurl = "/"
+baseurl = "test.hga.dog"
 title = "Heartland Greyhound Adoption"
 languageCode = "en-us"
 theme = "hugo-elate-theme"
