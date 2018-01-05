@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        {{ partial "head.html" .}}
+    </head>
+    <body>
+		{{ partial "nav-invert.html" .}}		
+		
+		<section id="resources" data-sections="blog">
+				<div class="container" style="margin-top:40px">
+					<div class="row">
+						<div class="col-md-12 section-heading text-center">
+							<h2 class="to-animate">{{ with $.Site.GetPage "Section" "blog" }}{{ .Title | markdownify }}{{ end }}</h2>
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 subtext to-animate">
+									<h3>{{ with $.Site.GetPage "Section" "blog" }}{{ .Description | markdownify }}{{ end }}</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+							{{ $paginator := .Paginate (where .Data.Pages.ByDate "Section" "blog") }}
+							{{ template "_internal/pagination.html" . }}
+							{{ range $paginator.Pages }}
+							<div class="col-md-6 content-item">
+									<div class="col-sm-12">
+										<h2>{{ .Title |markdownify }}</h2>
+										{{ if .Params.author }}
+										<h3>Written by {{ .Params.author }} {{ dateFormat "January 2, 2006" .Params.date }}</h3>
+										{{ end }}
+										<p>{{ .Params.description }}</p>
+										<div class="btn-wrap" style="padding-bottom:15px;">
+											<a class="btn btn-primary" href="{{.Permalink }}" target="_self"><span class="btn-home">READ MORE</span></a>
+										</div>
+									</div>
+									<div class="clearfix visible-sm-block"></div>
+							</div>
+								<hr> 
+							{{ end }}
+					</div>
+				</div>
+			</section>
+	{{ if .Site.Params.footer.enable }}
+	{{ partial "footer.html" .}}
+{{ end }}
+
+{{ partial "js.html" .}}
+</body>
+</html>
