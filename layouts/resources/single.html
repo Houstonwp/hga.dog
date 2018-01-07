@@ -17,7 +17,7 @@
                         <h4>{{ dateFormat "January 2, 2006" .Params.date }}</h4>
                         <h2 class=" left-border">{{ .Title | markdownify }}</h2>
                         {{ if .Params.author }}
-                        <div class="row">
+                        <div class="row" style="padding-bottom:15px;">
                             <div class="col-md-8 subtext">
                                 <h3>Written by {{ .Params.author }}</h3>
                             </div>
