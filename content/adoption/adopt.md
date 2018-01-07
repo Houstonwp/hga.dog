@@ -3,7 +3,6 @@ title = "Adopting a Retired Greyhound"
 description = "Is a retired racing greyhound right for you?"
 date = 2017-09-23T09:50:00-05:00
 draft = false
-url = "adoption/"
 slug = "adoption"
 layout = "adopt"
 +++

@@ -37,10 +37,9 @@
                     <li class="dropdown">
                             <a href="#" data-toggle="dropdown" data-nav-section="resources" class="dropdown-toggle"><span>{{ with .Site.Params.navigation.services }}{{ . | markdownify }}{{ end }} <b class="caret"></b></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="{{$.Site.BaseURL }}resources/essentials/">Adoption Essentials</a></li>
-                                <li><a href="{{$.Site.BaseURL }}resources/faq">Frequently Asked Questions</a></li>
-                                <li><a href="{{$.Site.BaseURL }}resources/blog">Blog</a></li>
-                                <li><a href="{{$.Site.BaseURL }}resources/greyt-information">Greyt Information</a></li>
+                                <li><a href="{{$.Site.BaseURL }}blog/resources/essentials/">Adoption Essentials</a></li>
+                                <li><a href="{{$.Site.BaseURL }}blog/resources/faq/">Frequently Asked Questions</a></li>
+                                <li><a href="{{$.Site.BaseURL }}blog/">Blog</a></li>
                             </ul>
                         </li>
                     {{ end }}
