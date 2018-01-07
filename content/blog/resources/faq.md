@@ -10,13 +10,13 @@ slug = "faq"
 +++
 
 ### What kind of a pet does a retired racing greyhound make? ###
-Greyhounds are affectionate, frinedly dogs that thrive on attention and human companionshio. They make terrific pets. Greyhounds do not usually make good watchdogs becaus they're too friendly!
+Greyhounds are affectionate, frinedly dogs that thrive on attention and human companionship. They make terrific pets. Greyhounds do not usually make good watchdogs becaus they're too friendly!
 
 ### Are greyhounds good with children? ###
 Most greyhounds are very tolerant of children. They are not as playful as puppies and usually walk away rather than growl or snap if children become overbearing. But, even a gentle greyhound has its limits, and, like any other dog, if they are tormented, they can become irritated.
 
 ### How are greyhounds with other pets? ###
-Greyhounds are friendly, sociable dogs. They are used to sharing their lives with other dogs and most greyhounds enjoy the company of other four-legged creatures. Some greyhounds do not otlerate cats, however, so it is important to "test" them around cats and introduce them slowly.
+Greyhounds are friendly, sociable dogs. They are used to sharing their lives with other dogs and most greyhounds enjoy the company of other four-legged creatures. Some greyhounds do not tolerate cats, however, so it is important to "test" them around cats and introduce them slowly.
 
 ### What has the life of a racing greyhound been like? ###
 Greyhounds bound for the track spend nearly all of their lives in the company of other dogs. The average greyhound litter is eight pups. Young greyhounds receive lots of attention and handling. As they approach their first birthday, their training begins and they are taught to chase a lure. Track life follows a daily routine, with feeding in the morning, turnouts in the exercise yard and nights in kennel crates. Greyhounds race every three to seven days, and most racing kennels have about sixty dogs. Most greyhounds have seen very little of the outside world. Houses, stairs, mirrors, and car rides are all new experiences for them.
@@ -30,8 +30,8 @@ Frequently, retired racers will have been in "foster care" with an adoption grou
 ### How big are greyhounds? ###
 Greyhounds are usually 23 to 30 inches tall at the shoulder and weigh between 60 and 85 pounds. Females are usually on the smaller side of those figures.
 
-### Why do grehounds need to be kepy on a leash? ###
-A leash assures the greyhound protection from disasters. Racing dogs have no fear of cars or other hazards in the outside world and as histroy has proven, the greyhound is an animal born to run. When chasing a squirrel oreven a leaf blowing down the street, they can quickly cover great distances and inadvertently become lost or hurt. Greyhounds are accustomed to walking on a leash and enjoy the exercise, as well as the attention they receive from people who pass by.
+### Why do grehounds need to be kept on a leash? ###
+A leash assures the greyhound protection from disasters. Racing dogs have no fear of cars or other hazards in the outside world and as histroy has proven, the greyhound is an animal born to run. When chasing a squirrel or even a leaf blowing down the street, they can quickly cover great distances and inadvertently become lost or hurt. Greyhounds are accustomed to walking on a leash and enjoy the exercise, as well as the attention they receive from people who pass by.
 
 ### Do greyhounds need a lot of exercise? ###
 Retired racers easily adapt to the lifestyle of their new owners. They love going for walks or just running after a ball in the yard. They can make good jogging companions after they have "worked up" to longer distance running. But, they are just as happy curled up on a soft bed in the living room!
@@ -46,7 +46,7 @@ The tattoo in your dog's left ear is the litter identification number assigned b
 The term "sighthound" describes greyhounds and other dogs that have been born and bred to hunt by sight and speed. Unlike other dogs, they hunt more with their eyes than their nose. Sighthounds are also known as "gazehounds" and "coursing hounds."
 
 ### Why are greyhounds so skinny? ###
-Greyhounds, like any other competitive athletes, have sleek, slender builds. Another reason they are trim is because they have little body fat. They are bred to be lean, racing machines. As a general rule, retired racers will be healthiest if they are kepy within ten pounds of their track weight.
+Greyhounds, like any other competitive athletes, have sleek, slender builds. Another reason they are trim is because they have little body fat. They are bred to be lean, racing machines. As a general rule, retired racers will be healthiest if they are kept within ten pounds of their track weight.
 
 ### What should I expect if I adopt a greyhound? ###
 You will find a gentle, loving, pet that attracts attention wherever you go. Off-the-track life will be new to them, but greyhounds are intelligent and learn very quickly.
