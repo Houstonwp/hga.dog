@@ -7,5 +7,5 @@ date = 2017-09-29T16:27:50-05:00
 lastmod = 2017-09-29T16:27:50-05:00
 draft = false
 layout = "volunteering"
-slug = "volunteering"
+url = "volunteering/"
 +++
