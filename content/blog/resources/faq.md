@@ -1,6 +1,7 @@
 +++
 title = "Frequently Asked Questions"
 description = ""
+author = "HGA"
 thumbnail = ""
 date = 2017-09-28T20:10:25-05:00
 lastmod = 2017-09-28T20:10:25-05:00

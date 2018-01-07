@@ -1,6 +1,6 @@
 +++
 title = "Learning to Love Your Greyhound’s Muzzle"
-description = ""
+description = "Are you really aware of the myriad of uses for the single best tool that arrives with your Greyhound on adoption day – its muzzle?"
 author = "Lynda Radecki"
 thumbnail = ""
 date = 2017-09-28T21:32:04-05:00

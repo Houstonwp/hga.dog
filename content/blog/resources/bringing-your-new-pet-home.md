@@ -1,7 +1,7 @@
 +++
 title = "Bringing Your New Pet Home"
 description = ""
-author = ""
+author = "HGA"
 thumbnail = "grey-race"
 date = 2017-09-29T16:27:50-05:00
 lastmod = 2017-09-29T16:27:50-05:00
