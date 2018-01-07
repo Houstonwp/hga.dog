@@ -29,7 +29,12 @@
 			<div class="row" style="width:100%;">
 				<div class="col-md-12 text-center subtext to-animate">
 					{{ range first 1 (where .Data.Pages.ByDate "Section" "blog") }}
-					<a href="{{ .URL }}" style="text-decoration:none;"><h3>{{.Title | markdownify }} </h3></a>
+					<a href="{{ .URL }}" class="fh5co-project-item to-animate">
+						<div style="z-index:10; position:relative; background-color:white;" class="fh5co-text">
+						<h2>{{ .Title |markdownify }}</h2>
+							<span>{{ .Description | markdownify }}</span>
+						</div>
+					</a>
 					{{ end }}
 				</div>
 			</div>
