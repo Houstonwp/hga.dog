@@ -12,6 +12,11 @@ theme = "hugo-elate-theme"
   author = ""
   description = ""
   email = ""
+
+  # Stripe
+  [params.stripe]
+    enable = false
+
   # Navigation
   [params.navigation]
     brand = "Heartland Greyhound Adoption"

@@ -461,6 +461,7 @@
                                     of dogs aged 0-6 $275.00 and dogs aged 7+ $200.00 as stated in this contract.
                                 </label>
                             </div>
+                            {{ if .Site.Params.stripe.enable }}
                             <div class="form-group" style="display: inline-block;">
                                     <script
                                     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
@@ -473,8 +474,12 @@
                                     data-image="https://test.hga.dog/images/HGA_LogoExport.png"
                                     data-locale="auto">
                                   </script>
-                                
                             </div>
+                            {{ else }}
+                            <div class="form-group" style="display: inline-block;">
+                                <input class="btn btn-primary btn-lg" value="APPLY" type="submit">
+                            </div>
+                            {{ end }}
                         </div>
                          
                     </form>

@@ -29,7 +29,7 @@
 			<div class="row" style="width:100%;">
 				<div class="col-md-12 text-center subtext to-animate">
 					{{ range first 1 (where .Data.Pages.ByDate "Section" "blog") }}
-					<h3><a href="{{ .URL }}"> {{.Title | markdownify }} </a></h3>
+					<a href="{{ .URL }}" style="text-decoration:none;"><h3>{{.Title | markdownify }} </h3></a>
 					{{ end }}
 				</div>
 			</div>
