@@ -17,6 +17,11 @@ theme = "hugo-elate-theme"
   [params.stripe]
     enable = false
 
+  # Blog
+  [params.blog]
+    title = "Blog"
+    description = "Writings on everything greyhounds and HGA."
+
   # Navigation
   [params.navigation]
     brand = "Heartland Greyhound Adoption"
