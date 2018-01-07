@@ -16,7 +16,7 @@
 			</div>
 			{{ if .Site.Params.intro.posts.enable }}
 			<div class="row" style="width:100%;">
-				<div class="col-md-12 section-heading text-center">
+				<div class="col-md-12 section-heading text-center" style="margin-bottom:0px !important">
 					<h2 class="to-animate">{{ with .Site.Params.intro.posts.title }}{{ . }}{{ end }}</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
@@ -27,12 +27,12 @@
 			</div>
 			<div class="clearfix visible-sm-block"></div>
 			<div class="row" style="width:100%;">
-				<div class="col-md-12 text-center subtext to-animate">
+				<div class="col-md-12 text-center subtext to-animate" style="margin-bottom:50px !important">
 					{{ range first 1 (where .Data.Pages.ByDate "Section" "blog") }}
 					<a href="{{ .URL }}" class="fh5co-project-item to-animate">
-						<div style="z-index:10; position:relative; background-color:white;" class="fh5co-text">
-						<h2>{{ .Title |markdownify }}</h2>
-							<span>{{ .Description | markdownify }}</span>
+						<div style="z-index:10; position:relative; background-color:#52d3aa;" class="fh5co-text">
+						<h2 style="color:white !important">{{ .Title |markdownify }}</h2>
+							<span style="color:lightgrey !important">{{ .Description | markdownify }}</span>
 						</div>
 					</a>
 					{{ end }}
