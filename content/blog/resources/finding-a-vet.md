@@ -1,6 +1,6 @@
 +++
 title = "Finding a Vet"
-description = ""
+description = "Greyhounds are different than regular dogs. It's important to find a vet with the right experience."
 author = "HGA"
 thumbnail = "grey-yawn"
 date = 2017-09-29T16:26:10-05:00

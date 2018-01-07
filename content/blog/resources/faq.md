@@ -1,6 +1,6 @@
 +++
 title = "Frequently Asked Questions"
-description = ""
+description = "We get asked a lot of questions. Here are some of our most frequent."
 author = "HGA"
 thumbnail = ""
 date = 2017-09-28T20:10:25-05:00

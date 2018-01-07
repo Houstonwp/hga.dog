@@ -1,6 +1,6 @@
 +++
 title = "Bringing Your New Pet Home"
-description = ""
+description = "Life at the track is different than life in retirement."
 author = "HGA"
 thumbnail = "grey-race"
 date = 2017-09-29T16:27:50-05:00
@@ -18,7 +18,7 @@ Bringing home a new pet is an exciting and reqarding experience. For the greyhou
 
 * Allow the dog to explore its new home at its own speed, but always under your supervision. It will be much easier to establish good habits early than to correct bad ones.
 
-*Although your dog is used to living indoors, everything is new to him in your home. As he sniffs his way through the house, you can offer words of encouragement or discouragement.
+* Although your dog is used to living indoors, everything is new to him in your home. As he sniffs his way through the house, you can offer words of encouragement or discouragement.
 
 * Your dog may not know how to handle stairs when you first bring him/her home. Start slowly at first taking him up and down two to three steps. On the way down, he may try to take all the steps at once, so stay in front of him so he can only take one at a time. With some patience, your dog will learn quickly and soon he will be climbing stairs like an old pro.
 
