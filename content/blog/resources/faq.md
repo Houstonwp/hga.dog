@@ -31,8 +31,8 @@ Frequently, retired racers will have been in "foster care" with an adoption grou
 ### How big are greyhounds? ###
 Greyhounds are usually 23 to 30 inches tall at the shoulder and weigh between 60 and 85 pounds. Females are usually on the smaller side of those figures.
 
-### Why do grehounds need to be kept on a leash? ###
-A leash assures the greyhound protection from disasters. Racing dogs have no fear of cars or other hazards in the outside world and as histroy has proven, the greyhound is an animal born to run. When chasing a squirrel or even a leaf blowing down the street, they can quickly cover great distances and inadvertently become lost or hurt. Greyhounds are accustomed to walking on a leash and enjoy the exercise, as well as the attention they receive from people who pass by.
+### Why do greyhounds need to be kept on a leash? ###
+A leash assures the greyhound protection from disasters. Racing dogs have no fear of cars or other hazards in the outside world and as histroy has proven, the greyhound is an animal born to run. When chasing a squirrel or even a leaf blowing down the street, they can quickly cover great distances and inadvertently become lost or hurt. Greyhounds are accustomed to walking on a leash and enjoy the exercise, as well as the attention they receive from people who pass by. Keeping your greyhound on-leash unless in a securely fenced area in a non-negotiable condition of adopting a greyhound.
 
 ### Do greyhounds need a lot of exercise? ###
 Retired racers easily adapt to the lifestyle of their new owners. They love going for walks or just running after a ball in the yard. They can make good jogging companions after they have "worked up" to longer distance running. But, they are just as happy curled up on a soft bed in the living room!
