@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        {{ partial "head.html" .}}
+    </head>
+    <body>
+        {{ partial "nav-invert.html" .}}
+
+        <section id="fh5co-adopt" data-section="resources">
+            <div class="container">
+                <div class="row">
+                    <div style="margin-bottom:0;" class="col-md-12 section-heading text-left">
+                        <h4>{{ dateFormat "January 2, 2006" .Params.date }}</h4>
+                        <h2 class=" left-border">{{ .Title | markdownify }}</h2>
+                        {{ if .Params.author }}
+                        <div class="row" style="padding-bottom:15px;">
+                            <div class="col-md-8 subtext">
+                                <h3>Written by {{ .Params.author }}</h3>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 fh5co-adopt">
+                        <p style="font-weight:400;">{{ .Content | markdownify }}</p>
+                    </div>
+                    <div class="clearfix visible-sm-block"></div>
+                </div>
+            </div>
+        </section>
+
+        {{ if .Site.Params.footer.enable }}
+        	{{ partial "footer.html" .}}
+        {{ end }}
+
+        {{ partial "js.html" .}}
+    </body>
+</html>
