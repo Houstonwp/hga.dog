@@ -11,7 +11,7 @@ slug = "faq"
 +++
 
 ### What kind of a pet does a retired racing greyhound make? ###
-Greyhounds are affectionate, frinedly dogs that thrive on attention and human companionship. They make terrific pets. Greyhounds do not usually make good watchdogs becaus they're too friendly!
+Greyhounds are affectionate, friendly dogs that thrive on attention and human companionship. They make terrific pets. Greyhounds do not usually make good watchdogs because they're too friendly!
 
 ### Are greyhounds good with children? ###
 Most greyhounds are very tolerant of children. They are not as playful as puppies and usually walk away rather than growl or snap if children become overbearing. But, even a gentle greyhound has its limits, and, like any other dog, if they are tormented, they can become irritated.

@@ -14,13 +14,13 @@ slug = "necessities"
 Those considering adopting a retired greyhound can buy supplies in advance to help their grey feel right at home. HGA recommends having the following prior to adopting your greyhound.
 
 ### Crate ###
-Racers spend most of their time at the track in a kennel crate and it can be a comfort to them as they transition to their new home. Acrate should be used for the adjustment period and sleeping, but can be phased out over time. The crate needs to be large enough for your dog to stand up, with its head up, and turn around. Put a washable blanket, a pillow, and a favorite toy in the crate to help your dog feel comfortable.
+Racers spend most of their time at the track in a kennel crate and it can be a comfort to them as they transition to their new home. A crate should be used for the adjustment period and sleeping, but can be phased out over time. The crate needs to be large enough for your dog to stand up, with its head up, and turn around. Put a washable blanket, a pillow, and a favorite toy in the crate to help your dog feel comfortable.
 
 ### Bed ###
 Greyhounds are sleek, slender dogs that need a soft bed to rest comfortably. Greyhounds are big dogs, so buy a dog bed at least 30x30.
 
 ### Food ###
-Purchase a premium food such as ProPlan, Nutro, IAMS, or Eukanube. If your grey has been at a foster home, check to see what it has been fed there. Cheap brands of dog food contain cor and wheat products that tend to give greyhounds gas and allergies.
+Purchase a premium food such as ProPlan, Nutro, IAMS, or Eukanube. If your grey has been at a foster home, check to see what it has been fed there. Cheap brands of dog food contain corn and wheat products that tend to give greyhounds gas and allergies.
 
 ### Food Container ###
 It is a good idea to buy a garbage can or large, plastic container with a lid to store your dog's food. A tight-fitting lid will prevent your dog from gaining surprise access to its food.
