@@ -219,7 +219,7 @@ theme = "hugo-elate-theme"
       
 
     [[params.about.item]]
-      name = "Hailey Andersen"
+      name = "Haylee Andersen"
       position = "Member-at-Large"
       description = ""
       img = "person3.jpg"
