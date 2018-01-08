@@ -219,7 +219,7 @@ theme = "hugo-elate-theme"
       
 
     [[params.about.item]]
-      name = "Joe Shearer"
+      name = "Hailey Andersen"
       position = "Member-at-Large"
       description = ""
       img = "person3.jpg"
@@ -227,7 +227,7 @@ theme = "hugo-elate-theme"
       
 
     [[params.about.item]]
-      name = "Vacant"
+      name = "LuAnn Kircher"
       position = "Member-at-Large"
       description = ""
       img = "person3.jpg"
