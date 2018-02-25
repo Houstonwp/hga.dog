@@ -1,5 +1,5 @@
 {{ $urlPre := "https://graph.facebook.com" }}
-{{ $fbevents := getJSON $urlPre "/v2.10/171731253749/events?access_token=" (getenv "HUGO_FB_KEY") "&fields=name,description,end_time,is_canceled,place,start_time,updated_time,cover,timezone&time_filter=upcoming" }}
+{{ $fbevents := getJSON $urlPre "/v2.10/171731253749/events?access_token=" (getenv "HUGO_FB_KEY") "&fields=id,name,start_time,cover&time_filter=upcoming" }}
 
 <section id="fh5co-adoptables" data-section="events">
 	<div class="container">
@@ -17,7 +17,7 @@
 				{{ range $fbevents.data }}
 				{{ $id := delimit (slice ( substr (string .start_time) 0 10) .name) " " | urlize }}
 			<div class="col-md-4 col-sm-12 ">
-				<a href="#" data-toggle="modal" data-target="#{{ $id }}" class="fh5co-project-item to-animate">
+				<a href="https://facebook.com/{{ .id }}" class="fh5co-project-item to-animate">
 					<img src="{{ .cover.source }}" alt="{{ .name }}" class="img-responsive">
 					<div class="fh5co-text">
 					<h2>{{ .name }}</h2>
@@ -26,58 +26,7 @@
 				</a>
 			</div>				
 			<div class="clearfix visible-sm-block"></div>
-			{{"<!-- Modal for Event Info -->" | safeHTML }}
-			<div id="{{ $id }}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header text-center">
-									<div class="row">
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-													<span aria-hidden="true">&times;</span>
-											</button>
-										</div>
-								<img src="{{ .cover.source }}" alt="{{ .name }}" class="img-responsive">
-								
-								<h2>{{ .name }}</h2>
-								<h3>{{ dateFormat "Monday, January 2, 2006" ( substr (string .start_time) 0 10) }}</h3>	
-							</div>
-							<div class="modal-body">
-								Event Details
-							<div id="map" data-lat="{{ .place.location.latitude }}" data-long="{{ .place.location.longitude }}" data-address="{{ delimit (slice .place.location.street .place.location.city .place.location.state .place.location.country) ", " }}">
-							</div>
-							<hr>
-							<div class="text-center">
-									<h2>Inquire</h2>
-				
-									<form name="Event Inquiry" data-netlify="true" action="thank-you">
-										<div class="form-group">
-											<input type="hidden" id="event" name="event" value="{{ $id }}">
-										</div>
-										<div class="form-group ">
-												<label for="name" class="sr-only">Name</label>
-												<input id="name" class="form-control" name="name" placeholder="Name" type="text">
-											</div>
-											<div class="form-group ">
-												<label for="email" class="sr-only">Email</label>
-												<input id="email" class="form-control" name="_replyto" placeholder="Email" type="email">
-											</div>
-											<div class="form-group ">
-												<label for="phone" class="sr-only">Phone</label>
-												<input id="phone" class="form-control" name="phone" placeholder="Phone" type="tel">
-											</div>
-											<div class="form-group ">
-												<label for="message" class="sr-only">Message</label>
-												<textarea id="message" cols="30" rows="5" class="form-control" name="message" placeholder="Message"></textarea>
-											</div>
-										<div class="form-group ">
-											<input class="btn btn-primary btn-lg" value="SEND" type="submit">
-										</div>
-									</form>
-								</div>
-								</div>
-						</div>
-					</div>
-				  </div>
+			
 		{{ end }}
 		</div>
 	</div>
