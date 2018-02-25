@@ -282,8 +282,8 @@ theme = "hugo-elate-theme"
     # Available icons: http://simplelineicons.com/
     details = [
         ["icon-home", "P.O. Box 342, Bondurant, IA, 50035"],
-        ["icon-phone", "(515) 210-0459"],
-        ["icon-envelope", "support@hga.dog"],
+        ["icon-phone", "(515) 967-6564"],
+        ["icon-envelope", "adopt@heartlandgreyhoundadoption.org"],
        # ["icon-globe", '<a href="http://freehtml5.co/" target="_blank">freehtml5.co</a>']
       ]
 
@@ -296,7 +296,7 @@ theme = "hugo-elate-theme"
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; Heartland Greyhound Adoption. All Rights Reserved. <br>Created by Houston Perrett'
+    copyright = '&copy; Heartland Greyhound Adoption. All Rights Reserved. <br>Created by Houston Perrett with Netlify and Hugo.'
 
 
   # Application section
