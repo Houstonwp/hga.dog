@@ -153,7 +153,7 @@
                             <div class="form-group form-dwelling col-sm-12">
                                 <label>Select your dwelling type</label>
                                 <br>
-                                <select class="form-group" id='dwelling-type'>
+                                <select class="form-group form-control" id='dwelling-type'>
                                     <option value="1-Family Home">1-Family Home</option>
                                     <option value="2-Family Home">2-Family Home</option>
                                     <option value="Apartment">Apartment</option>
@@ -163,7 +163,7 @@
                             <div class="form-group form-ownership col-sm-12">
                                     <label>Do you own or rent?</label>
                                     <br>
-                                    <select class="form-group" id='ownership'>
+                                    <select class="form-group form-control" id='ownership'>
                                             <option value="Own">Own</option>
                                             <option value="Rent">Rent</option>
                                     </select>
@@ -178,7 +178,7 @@
                             <div class="form-group form-permission-option col-sm-12">
                                 <label>Can you get a written note of permission from your landlord stating that you may have a Greyhound?</label>
                                 <br>
-                                <select class="form-group" id='permission'>
+                                <select class="form-group form-control" id='permission'>
                                         <option value="No">No</option>    
                                         <option value="Yes">Yes</option>
                                 </select>
@@ -188,7 +188,7 @@
                             <div class="form-group form-fence col-sm-12">
                                     <label>Do you have a fenced in yard?</label>
                                     <p style="margin-bottom:5px;">Invisible fences are not acceptable.</p>
-                                    <select class="form-group" id='fence'>
+                                    <select class="form-group form-control" id='fence'>
                                         <option value="No">No</option>    
                                         <option value="Yes">Yes</option>
                                     </select>
@@ -196,7 +196,7 @@
                             <div class="form-group form-stairs col-sm-12">
                                 <label>Are there stairs in your home that the dog will need to go up and down?</label>
                                 <br>                                    
-                                <select class="form-group" id='stairs'>
+                                <select class="form-group form-control" id='stairs'>
                                     <option value="No">No</option>    
                                     <option value="Yes">Yes</option>
                                 </select>
@@ -204,7 +204,7 @@
                             <div class="form-group form-children col-sm-12">
                                 <label>Do you live with children or will children frequently visit your home?</label>
                                 <br>                                    
-                                <select class="form-group" id='children'>
+                                <select class="form-group form-control" id='children'>
                                     <option value="No">No</option>    
                                     <option value="Yes">Yes</option>
                                 </select>
@@ -228,7 +228,7 @@
                                 <div class="form-group form-outside col-sm-12">
                                     <label>Are you willing and able to take the dog outside to relieve itself at least 4 to 5 times every day in all kinds of weather?</label>
                                     <br>                                    
-                                    <select class="form-group" id='outside'>
+                                    <select class="form-group form-control" id='outside'>
                                         <option value="No">No</option>    
                                         <option value="Yes">Yes</option>
                                     </select>
@@ -243,7 +243,7 @@
                                 <div class="form-group form-lost col-sm-12">
                                     <label>Do you promise to keep a collar, bearing identification, on the dog at all times, and further promise to notify Heartland Greyhound Adoption immediately if the dog should ever become lost?</label>
                                     <br>                                    
-                                    <select class="form-group" id='lost'>
+                                    <select class="form-group form-control" id='lost'>
                                         <option value="No">No</option>    
                                         <option value="Yes">Yes</option>
                                     </select>
@@ -251,7 +251,7 @@
                                 <div class="form-group form-chained col-sm-12">
                                         <label>Do you understand that Greyhounds can not be chained and left outside?</label>
                                         <br>                                    
-                                        <select class="form-group" id='chained'>
+                                        <select class="form-group form-control" id='chained'>
                                             <option value="No">No</option>    
                                             <option value="Yes">Yes</option>
                                         </select>
@@ -261,7 +261,7 @@
                                 <div class="form-group form-racer col-sm-12">
                                     <label>Are you fully aware of the fact that this dog's career as a racer is over, and that you will be unable to re-activate that career?</label>
                                     <br>                                    
-                                    <select class="form-group" id='racer'>
+                                    <select class="form-group form-control" id='racer'>
                                         <option value="No">No</option>    
                                         <option value="Yes">Yes</option>
                                     </select>
@@ -269,7 +269,7 @@
                                 <div class="form-group form-financial col-sm-12">
                                     <label>Have you carefully thought about your willingness and ability to financially care for your greyhound should it develop 'special needs' and require medical attention beyond the regular and routine health checkups, shots, and annual dental cleaning?</label>
                                     <br>                                    
-                                    <select class="form-group" id='financial'>
+                                    <select class="form-group form-control" id='financial'>
                                         <option value="No">No</option>    
                                         <option value="Yes">Yes</option>
                                     </select>
@@ -288,7 +288,7 @@
                                     <label>Are you prepared to obtain one of the two books required by Heartland Greyhound
                                         Adoption and to have read it prior to placement of your greyhound?</label>
                                     <br>                                    
-                                    <select class="form-group" id='book'>
+                                    <select class="form-group form-control" id='book'>
                                         <option value="No">No</option>    
                                         <option value="Yes">Yes</option>
                                     </select>
@@ -486,7 +486,7 @@
                                 </label>
                             </div>
                             {{ if .Site.Params.stripe.enable }}
-                            <div class="form-group" style="display: inline-block;">
+                            <div class="form-group form-control" style="display: inline-block;">
                                     <script
                                     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                                     data-key="pk_test_XallSFtwFIHPcsjKJ1xLo8r5"
@@ -500,7 +500,7 @@
                                   </script>
                             </div>
                             {{ else }}
-                            <div class="form-group" style="display: inline-block;">
+                            <div class="form-group form-control" style="display: inline-block;">
                                 <input class="btn btn-primary btn-lg" value="APPLY" type="submit">
                             </div>
                             {{ end }}
