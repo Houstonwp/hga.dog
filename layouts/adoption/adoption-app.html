@@ -108,6 +108,16 @@
                                         <input id="employer" class="form-control" name="employer" placeholder="{{ . }}" type="text">
                                         {{ end }}
                                     </div>
+                                    <div class="form-group col-sm-12">
+                                        <label>Why do you want to own a greyhound?</label>
+                                        <br>
+                                        <textarea id="why-description" cols="15" rows="4" class="form-control" name="why-description"></textarea>
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <label>What pets have you had in the past? Why are they no longer with you?</label>
+                                        <br>
+                                        <textarea id="pet-description" cols="15" rows="4" class="form-control" name="pets-description"></textarea>
+                                    </div>
                             </div>
                         <hr>
                         <div class="row">
@@ -191,7 +201,21 @@
                                     <option value="Yes">Yes</option>
                                 </select>
                             </div>
+                            <div class="form-group form-children col-sm-12">
+                                <label>Do you live with children or will children frequently visit your home?</label>
+                                <br>                                    
+                                <select class="form-group" id='children'>
+                                    <option value="No">No</option>    
+                                    <option value="Yes">Yes</option>
+                                </select>
+                            </div>
+                            <div class="form-group form-pets-owned col-sm-12">
+                                <label>Do you have any other pets (cats, dogs, caged animals, outside annimals)? Describe below, please include type, age, sex (spayed or neutered).</label>
+                                <br>
+                                <textarea id="pets-owned-description" cols="15" rows="4" class="form-control" name="pets-owned-description"></textarea>
+                            </div>
                         </div>
+                        <hr>
                         <div class="row">
                             <div class="form-group form-fence-yes col-sm-12">
                                 <textarea id="fence-description" cols="15" rows="3" class="form-control" name="fence-description" placeholder="Please provide a description."></textarea>
@@ -442,13 +466,13 @@
                                     <input class="form-control" id='signature1' type="text" placeholder="Digital Signature Here.">
                                 </div>
                                 <div class="col-sm-3">
-                                    <input class="form-control" id="date1" type="date" placeholder="Date">
+                                    <input class="form-control" id="date1" type="date" value="{{ now.Format "January 2, 2006" }}">
                                 </div>
                                 <div class="col-sm-9">                                    
                                     <input class="form-control" id='signature2' type="text" placeholder="Digital Signature Here.">
                                 </div>
                                 <div class="col-sm-3">
-                                    <input class="form-control" id="date2" type="date" placeholder="Date">
+                                    <input class="form-control" id="date2" type="date" value="{{ now.Format "January 2, 2006" }}">
                                 </div>
                             </div>
                         </div>

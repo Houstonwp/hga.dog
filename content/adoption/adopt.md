@@ -60,4 +60,4 @@ The adoption fee for greyhounds through HGA is $275. Senior (Age 7+) dogs have a
 * Use care when introducing your greyhound to children and small pets, as greyhounds have not been exposed to them before
 * Keep your greyhound indoors because they should not be exposed to prolonged heat or cold
 * Feed only high-quality food (avoid corn and wheat products)
-* Brush your greyhound’s teeth
+* Brush your greyhound’s teeth and get yearly teeth cleanings
