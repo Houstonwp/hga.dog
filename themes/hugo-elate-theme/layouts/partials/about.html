@@ -16,7 +16,7 @@
 				</div>
 			</div>
 			<div class="row">
-			{{ range .Site.Params.about.item }}
+			{{ range first 4 .Site.Params.about.item }}
 				<div class="col-md-3">
 					<div class="fh5co-person text-center to-animate">
 						<figure><img src="images/{{ .img }}" alt="{{ .alt }}"></figure>
@@ -31,6 +31,23 @@
 					</div>
 				</div>
 			{{ end }}
+			<div class="row">
+			{{ range after 4 .Site.Params.about.item }}
+			<div class="col-md-3 col-md-offset-1point5">
+				<div class="fh5co-person text-center to-animate">
+					<figure><img src="images/{{ .img }}" alt="{{ .alt }}"></figure>
+					<h3>{{ .name | markdownify }}</h3>
+					<span class="fh5co-position">{{ .position | markdownify }}</span>
+					<p>{{ .description | markdownify }}</p>
+					<ul class="social social-circle">
+					{{ range .social }}
+						<li><a href="{{ index . 1 }}"><i class="{{ index .  0 }}"></i></a></li>
+					{{ end }}
+					</ul>
+				</div>
+			</div>
+		{{ end }}
+			</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12 text-center to-animate">

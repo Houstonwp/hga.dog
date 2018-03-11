@@ -70,7 +70,7 @@ theme = "hugo-elate-theme"
     description = "HGA is run by volunteers. Whether it is helping at an event or fostering, we'd love your help!"
     url = "volunteering/"
     button = "Opportunities"
-    icon = "icon-profile"
+    icon = "icon-heart"
     img = "img_8.jpg"
 
   [[params.intro.item]]
@@ -78,7 +78,7 @@ theme = "hugo-elate-theme"
     description = "Interested in adoption? See what the adoption process is like and our requirements."
     url = "adoption/"
     button = "Learn How"
-    icon = "icon-heart"
+    icon = "icon-home"
     img = "img_10.jpg"
 
   [params.intro.video]
