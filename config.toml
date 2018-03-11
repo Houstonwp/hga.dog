@@ -62,7 +62,7 @@ theme = "hugo-elate-theme"
     description = "We rely on donations to support the entire adoption process from vetting to microchips."
     url = "donating/"
     button = "Support Us"
-    icon = "icon-bulb"
+    icon = "icon-credit-card"
     img = "img_7.jpg"
 
   [[params.intro.item]]
@@ -70,7 +70,7 @@ theme = "hugo-elate-theme"
     description = "HGA is run by volunteers. Whether it is helping at an event or fostering, we'd love your help!"
     url = "volunteering/"
     button = "Opportunities"
-    icon = "icon-wrench"
+    icon = "icon-profile"
     img = "img_8.jpg"
 
   [[params.intro.item]]
@@ -78,7 +78,7 @@ theme = "hugo-elate-theme"
     description = "Interested in adoption? See what the adoption process is like and our requirements."
     url = "adoption/"
     button = "Learn How"
-    icon = "icon-rocket"
+    icon = "icon-heart"
     img = "img_10.jpg"
 
   [params.intro.video]
@@ -161,7 +161,7 @@ theme = "hugo-elate-theme"
 
     [[params.services.item]]
       title = "Adoption Essentials"
-      description = "It's important to have things in order before adopting a greyhound. The essentials are what we believe to be vital to your success as a new member of the cult including supplies to have, finding a vet, and bringing home your new family member."
+      description = "It's important to have things in order before adopting a greyhound. The essentials are what we believe to be vital to your success as a new member of HGA including supplies to have, finding a vet, and bringing home your new family member."
       icon = "icon-support"
       link = "essentials"
 
