@@ -486,7 +486,7 @@
                                 </label>
                             </div>
                             {{ if .Site.Params.stripe.enable }}
-                            <div class="form-group form-control" style="display: inline-block;">
+                            <div class="form-group" style="display: inline-block;">
                                     <script
                                     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                                     data-key="pk_test_XallSFtwFIHPcsjKJ1xLo8r5"
@@ -500,7 +500,7 @@
                                   </script>
                             </div>
                             {{ else }}
-                            <div class="form-group form-control" style="display: inline-block;">
+                            <div class="form-group" style="display: inline-block;">
                                 <input class="btn btn-primary btn-lg" value="APPLY" type="submit">
                             </div>
                             {{ end }}
