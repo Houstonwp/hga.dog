@@ -175,8 +175,8 @@ theme = "hugo-elate-theme"
   [params.about]
     enable = true
     title = "About"
-    description = "Heartland Greyhound Adoption is a volunteer not-for-profit 501&#40;c&#41;(3) organization, formed and operating in central Iowa to promote the adoption of retired racing greyhounds."
-    footertext = '<a class= "btn btn-primary" href="about/" target="_blank"><span class="btn-home">READ MORE</span></a>'
+    description = "Heartland Greyhound Adoption is a volunteer, not-for-profit 501&#40;c&#41;(3) organization, formed and operating in central Iowa to promote the adoption of retired racing greyhounds."
+    footertext = '<a class= "btn btn-primary" href="about/" target="_self"><span class="btn-home">READ MORE</span></a>'
 
     [[params.about.item]]
       name = "Jody Phelps"
