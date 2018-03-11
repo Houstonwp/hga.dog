@@ -31,9 +31,9 @@
 					</div>
 				</div>
 			{{ end }}
-			<div class="row col-md-offset-1point5">
+			<div class="row" style="width:100%;">
 			{{ range after 4 .Site.Params.about.item }}
-			<div class="col-md-3">
+			<div class="col-md-3" style="display:inline-block;">
 				<div class="fh5co-person text-center to-animate">
 					<figure><img src="images/{{ .img }}" alt="{{ .alt }}"></figure>
 					<h3>{{ .name | markdownify }}</h3>
