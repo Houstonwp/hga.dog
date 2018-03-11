@@ -26,7 +26,7 @@ Bringing home a new pet is an exciting and rewarding experience. For the greyhou
 
 * Mirrors are also a new experience for your dog. he may think his reflections is another dog and try to play with it.
 
-* Take precautions when cooking. your stove and counters are at eye level and your dog will be curious about the food smells. When cooking or baking, your stove will become hot and your dog does not realize he will get burned.
+* Take precautions when cooking. Your stove and counters are at eye level and your dog will be curious about the food smells. When cooking or baking, your stove will become hot and your dog does not realize he will get burned.
 
 * The patterns you set in the first few days are the ones you will live with the rest of your pet's life. If you do not want your pet on the furniture, do not break down at 3 a.m. and cuddle him on the couch!
 
@@ -36,4 +36,6 @@ Bringing home a new pet is an exciting and rewarding experience. For the greyhou
 
 * It is not unusual for a new pet to refuse to eat for a day or two. He will probably drink more water than normal and consequently need to go out more often. Also, he will need more rest than usual.
 
-The change of diet and excitement of this new home may cause your new pet to have diarrhea. Should this occur, give your dog two teaspoons of Kaopectate every hour for four hours or until the diarrhea stops. If it continues for more than a day, consult your veterinarian.
+* The change of diet and excitement of this new home may cause your new pet to have diarrhea. Make sure your dog stays hydrated and has as many chances to relieve itself as necessary. If it continues for more than a day or two, consult your veterinarian.
+
+Contact an HGA representative or your greyhound's foster family if you have any questions during your dog's transition.
