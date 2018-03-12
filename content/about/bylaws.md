@@ -1,29 +1,14 @@
 +++
-title = "HGA Bylaws"
-description = ""
+title = "Bylaws of Heartland Greyhound Adoption"
+description = "Adopted July 2001, Amended April 2003, Amended July 2007, Amended August 2009, Amended January 2013"
 date = 2013-01-24T13:18:33-05:00
 draft = false
 url = "about/bylaws"
 layout = "about"
 +++
 
-
-**ADOPTED JULY 2001**
-
-**AMENDED April 2003**
-
-**AMENDED July 2007**
-
-**AMENDED August 2009**
-
-**AMENDED January 2013**
-
-**BYLAWS OF**
-
-**HEARTLAND GREYHOUND ADOPTION**
-
 **ARTICLE I. OBJECTIVES and PURPOSE**
-=====================================
+------------------------
 
 **Section 1. Mission.** This organization shall be known as Heartland
 Greyhound Adoption. The mission of Heartland Greyhound Adoption is to:
@@ -55,7 +40,7 @@ carried on by a corporation exempt from federal income tax under the
 laws of the state of Iowa or the laws of the United States of America.
 
 **ARTICLE II. OFFICES**
-=======================
+------------------------
 
 **Section 1. Principal Office.** The principal office of the corporation
 in the State of Iowa shall be located at P.O. Box 342, Bondurant, county
@@ -72,7 +57,7 @@ address of the registered office may be changed from time to time by the
 Board of Directors.
 
 **ARTICLE III. MEMBERS**
-========================
+------------------------
 
 **Section 1. Classes of Members.** The corporation shall have one class
 of members: Individual and Subscriber. Membership in the corporation is
@@ -114,7 +99,7 @@ Directors may deem appropriate.
 not transferable or assignable.
 
 **ARTICLE IV. MEETINGS OF MEMBERS**
-===================================
+------------------------
 
 **Section 1. Annual Meeting.** The annual meeting of members shall be
 held between July 1^st^ and August 31^st^ on such a date as the Board of
@@ -162,13 +147,11 @@ action.
 **Section 6. Quorum.** A quorum shall consist of the majority of the
 board and one of the following:
 
-a.  If non-board voting membership is greater than 50 members – 10% of
-    > such members
++ a.  If non-board voting membership is greater than 50 members – 10% of such members
 
-b.  If non-board voting membership is between 5 and 49 – a minimum of 5
-    > such members
++ b.  If non-board voting membership is between 5 and 49 – a minimum of 5 such members
 
-c.  If non-board voting membership is less than 5 – 100% of such members
++ c.  If non-board voting membership is less than 5 – 100% of such members
 
 If a quorum is not present at any meeting of members, a majority of the
 members present may adjourn the meeting without further notice.
@@ -185,7 +168,7 @@ conducted by mail in the manner that the Board of Directors shall
 determine.
 
 **ARTICLE V. BOARD OF DIRECTORS**
-=================================
+--------------------------------
 
 **Section 1. General Powers.** The affairs of the corporation shall be
 managed by its Board of Directors. Directors need not be residents of
@@ -200,55 +183,33 @@ of a simple majority of members qualified to vote. For the purpose of
 establishing staggered terms of office, the Board of Directors shall be
 divided into six classes as follows:
 
-Class I shall consist of one director identified as the President, who
-shall serve a term of
+* Class I shall consist of one director identified as the President, who
+shall serve a term of office, which shall expire at the annual meeting held in the year 2004
+and at the annual meeting held every third year thereafter.
 
-office, which shall expire at the annual meeting held in the year 2004
-and at the annual
+* Class II shall consist of one director identified as the Treasurer and
+who shall serve a term of office which shall expire at the annual meeting held in the year
+2003 and at the annual meeting held every third year thereafter.
 
-> meeting held every third year thereafter.
+* Class III shall consist of one director identified as the Secretary and
+who shall serve a term of office which shall expire at the annual meeting held in 2002 and
+at the annual meeting held every third year thereafter.
 
-Class II shall consist of one director identified as the Treasurer and
-who shall serve a
+* Class IV shall consist of one director identified as the Vice President
+and who shall serve a term of office which shall expire at the annual meeting held in 2003
+and at the annual meeting held every second year thereafter.
 
-term of office which shall expire at the annual meeting held in the year
-2003 and at the
+* Class V shall consist of two directors identified as At Large Directors,
+who shall serve terms of office which shall expire at the annual meeting held in 2003
+and at the annual meeting held every second year thereafter. This class will now expire
+at the annual meeting held in 2004 and at the annual meeting held
+every second year thereafter.
 
-annual meeting held every third year thereafter.
-
-Class III shall consist of one director identified as the Secretary and
-who shall serve a
-
-term of office which shall expire at the annual meeting held in 2002 and
-at the annual
-
-meeting held every third year thereafter.
-
-Class IV shall consist of one director identified as the Vice President
-and who shall serve
-
-> a term of office which shall expire at the annual meeting held in 2003
-> and at the annual meeting held every second year thereafter.
-
-Class V shall consist of two directors identified as At Large Directors,
-who shall serve
-
-terms of office which shall expire at the annual meeting held in 2003
-and at the annual
-
-> meeting held every second year thereafter. This class will now expire
-> at the annual meeting held in 2004 and at the annual meeting held
-> every second year thereafter.
-
-Class VI shall consist of one director identified as an At Large
-Director, who shall serve a
-
-term of office which shall expire at the annual meeting held in 2002 and
-at the annual
-
-> meeting held every year thereafter. This class will now expire at the
-> annual meeting held in 2003 and at the annual meeting held every
-> second year thereafter.
+* Class VI shall consist of one director identified as an At Large
+Director, who shall serve a term of office which shall expire at the annual meeting held in 2002 and
+at the annual meeting held every year thereafter. This class will now expire at the
+annual meeting held in 2003 and at the annual meeting held every
+second year thereafter.
 
 Jorene King shall be the initial director for Class I; Aaron Siebrecht
 shall be the initial director for Class II; Carol Zingg shall be the
@@ -542,12 +503,14 @@ to vote. All books and records of the corporation may be inspected by
 any member, or his agent or attorney for any proper purpose at any
 reasonable time.
 
-***ARTICLE XII. FISCAL YEAR***
+**ARTICLE XII. FISCAL YEAR**
+------------------------
 
 The fiscal year of the corporation shall begin on the first day of
 January and end on the last day of December in each year.
 
-***ARTICLE XIII. DUES***
+**ARTICLE XIII. DUES**
+------------------------
 
 **Section 1. Annual Dues.** The Board of Directors may determine the
 amount of initiation fee, if any, and annual dues payable to the
@@ -561,7 +524,8 @@ any class shall be in default in the payment of dues upon expiration,
 such member’s membership may be terminated by the Board of Directors in
 the manner provided in Article III (Members) of these bylaws.
 
-***ARTICLE XIV. WAIVER OF NOTICE***
+**ARTICLE XIV. WAIVER OF NOTICE**
+------------------------
 
 Whenever any notice is required to be given under the provisions of the
 Iowa Nonprofit Corporation Act or under the provisions of the articles
@@ -570,7 +534,8 @@ signed by the persons entitled to the notice, whether before or after
 the time stated there, shall be deemed equivalent to the giving of
 notice.
 
-***ARTICLE XV. AMENDMENTS TO BYLAWS***
+**ARTICLE XV. AMENDMENTS TO BYLAWS**
+------------------------
 
 These bylaws may be altered, amended or repealed and new bylaws may be
 adopted by a majority of the directors and majority of members present
@@ -584,7 +549,8 @@ the bylaws or the Iowa Code, be operative during any emergency, in the
 conduct of the affairs of the corporation resulting from an attack on
 the United States or any nuclear or atomic disaster.
 
-***ARTICLE XVI. DISOLUTION AND DISPOSITION***
+**ARTICLE XVI. DISOLUTION AND DISPOSITION**
+------------------------
 
 Upon dissolution of the organization, its assets remaining after
 payment, or provision for payment, of all debts and liabilities of this
@@ -594,7 +560,8 @@ distribution shall be made in accordance with all applicable provision
 of the laws of this state. All dogs in the organizations care will be
 placed in adoptive homes.
 
-***ARTICLE XVII CONFLICT OF INTEREST***
+**ARTICLE XVII CONFLICT OF INTEREST**
+------------------------
 
 At the time of tax filing or newly elected to the board of directors,
 all board of directors will file a conflict of interest statement.
