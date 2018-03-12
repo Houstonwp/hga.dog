@@ -1602,6 +1602,9 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-adopt .section-heading h2 {
   color: #fff;
 }
+#fh5co-adopt h2 {
+  color: #fff;
+}
 #fh5co-adopt .section-heading h2.left-border:after {
   background: rgba(255, 255, 255, 0.3);
 }
