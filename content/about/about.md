@@ -9,7 +9,7 @@ layout = "about"
 
 ### HGA Mission Statement ###
 
-The mission of Heartland Greyhound Adoption is: to educate the public about greyhounds through outreach projects; to encourage and nurture the adoption of greyhounds; to accept and screen applications for greyhound adoption; to establish foster homes for greyhounds prior to adoption; to aid and support the efforts of other greyhound friends and adoption groups; to establish and promote cooperation and understanding with local humane societies and other animal-interest groups.
+The mission of Heartland Greyhound Adoption is: to educate the public about retired racing greyhounds through outreach projects; to encourage and nurture the adoption of greyhounds; to accept and screen applications for greyhound adoption; to establish foster homes for greyhounds prior to adoption; to aid and support the efforts of other greyhound friends and adoption groups; to establish and promote cooperation and understanding with local humane societies and other animal-interest groups.
 
 ### Group History ###
 

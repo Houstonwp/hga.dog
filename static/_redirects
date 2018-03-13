@@ -1,0 +1,4 @@
+# Redirect domain aliases to primary domain
+https://www.hga.dog/* https://www.heartlandgreyhoundadoption.org/:splat 301!
+https://hga.dog/* https://www.heartlandgreyhoundadoption.org/:splat 301!
+https://heartlandgreyhoundadoption.org/* https://www.heartlandgreyhoundadoption.org/:splat 301!
