@@ -4,9 +4,9 @@
 {{ $.Scratch.Set "F" "female" }}
 {{ $.Scratch.Set "" "greyhound"}}
 {{ if isset $adoptables.petfinder.pets.pet }}
-{{ $available := index $adoptables.petfinder.lastOffset "$t" }}
+	{{ $available := index $adoptables.petfinder.lastOffset "$t" }}
 {{ else }}
-{{ $available := 0 }}
+	{{ $available := "0" }}
 {{ end }}
 
 <section id="fh5co-work"  data-section="work">
