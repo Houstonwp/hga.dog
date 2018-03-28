@@ -3,7 +3,7 @@
 {{ $.Scratch.Set "M" "male" }}
 {{ $.Scratch.Set "F" "female" }}
 {{ $.Scratch.Set "" "greyhound"}}
-{{ if isset $adoptables.petfinder.lastOffset 1 }}{{ $available := index $adoptables.petfinder.lastOffset "$t" }}{{ else }}{{ $available := "0"}}{{ end }}
+{{ if isset $adoptables.petfinder.lastOffset 1 }}{{ $available := index $adoptables.petfinder.lastOffset "$t" }}{{ else }}{{ $available := 0 }}{{ end }}
 
 
 <section id="fh5co-work"  data-section="work">
