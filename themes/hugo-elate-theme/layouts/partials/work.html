@@ -13,13 +13,14 @@
 				<h2 class="to-animate">Our Adoptables</h2>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 subtext to-animate">
-						<h3>We currently have {{ if isset $available }}{{ $available }}{{ else }} {{ "0" }}{{ end }} {{ if gt $available 1}}{{ pluralize "greyhound" }}{{ else }}greyhound{{ end }} available for adoption.<br>{{ with .Site.Params.work.description }}{{ . | markdownify }}{{ end }}</h3>
+						<h3>We currently have {{ $available }} {{ if gt $available 1}}{{ pluralize "greyhound" }}{{ else }}greyhound{{ end }} available for adoption.<br>{{ with .Site.Params.work.description }}{{ . | markdownify }}{{ end }}</h3>
 					</div>
 				</div>
 			</div>
 		</div>
+		{{ if isset $adoptables.petfinder.pets.pet }}
 		<div class="row row-bottom-padded-sm">
-			{{ if isset $adoptables.petfinder.pets.pet }}
+			
 			{{ range first 3 $adoptables.petfinder.pets.pet }} 				
 				{{ $title := index .name "$t" }} 
 				{{ $id := index .id "$t" }}
