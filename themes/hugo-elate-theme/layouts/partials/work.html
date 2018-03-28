@@ -3,11 +3,8 @@
 {{ $.Scratch.Set "M" "male" }}
 {{ $.Scratch.Set "F" "female" }}
 {{ $.Scratch.Set "" "greyhound"}}
-{{ if isset $adoptables.petfinder.pets.pet }}
-	{{ $available := index $adoptables.petfinder.lastOffset "$t" }}
-{{ else }}
-	{{ $available := "0" }}
-{{ end }}
+{{ if isset index $adoptables.petfinder.lastOffset "$t" }}{{ $available := index $adoptables.petfinder.lastOffset "$t" }}{{ else }}{{ $available := "0"}}
+
 
 <section id="fh5co-work"  data-section="work">
 	<div class="container">
@@ -16,7 +13,7 @@
 				<h2 class="to-animate">Our Adoptables</h2>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 subtext to-animate">
-						<h3>We currently have {{ $available }} {{ if gt $available 1}}{{ pluralize "greyhound" }}{{ else }}greyhound{{ end }} available for adoption.<br>{{ with .Site.Params.work.description }}{{ . | markdownify }}{{ end }}</h3>
+						<h3>We currently have {{ if isset $available }}{{ $available }}{{ else }} {{ "0" }}{{ end }} {{ if gt $available 1}}{{ pluralize "greyhound" }}{{ else }}greyhound{{ end }} available for adoption.<br>{{ with .Site.Params.work.description }}{{ . | markdownify }}{{ end }}</h3>
 					</div>
 				</div>
 			</div>
