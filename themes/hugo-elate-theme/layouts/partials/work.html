@@ -19,121 +19,238 @@
 		</div>
 		<div class="row row-bottom-padded-sm">
 			{{ if eq $available nil }}
-			{{ else }}
-			{{ range first 3 $adoptables.petfinder.pets.pet }} 				
-				{{ $title := index .name "$t" }} 
-				{{ $id := index .id "$t" }}
-				{{ $description := index .description "$t"}}
-				{{ $age := index .age "$t" }}
-				{{ $sex := index .sex "$t" }}
+			{{ else if eq $available 1}}
+				{{with $adoptables.petfinder.pets.pet}}
+					{{ $title := index .name "$t" }} 
+					{{ $id := index .id "$t" }}
+					{{ $description := index .description "$t"}}
+					{{ $age := index .age "$t" }}
+					{{ $sex := index .sex "$t" }}
+					
+					{{ $img1 := index (index .media.photos.photo 2) "$t" }} 
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<a href="#" data-toggle="modal" data-target="#{{ $id }}" class="fh5co-project-item to-animate">
+							<div style="max-width:500px;padding-top:75%;position:relative;">
+								<img style="position:absolute;top:0;left:0;" src= "{{ $img1 }}" alt="{{ $title }}" class="img-responsive lazy" >
+							</div>
+							<div style="z-index:10; position:relative; background-color:white;" class="fh5co-text">
+							<h2>{{ $title }}</h2>
+								<span>I'm a beautiful {{ lower $age }} {{ $.Scratch.Get $sex }}!</span>
+							</div>
+						</a>
+					</div>
 				
-				{{ $img1 := index (index .media.photos.photo 2) "$t" }} 
-				<div class="col-md-4 col-sm-6 col-xs-12">
-					<a href="#" data-toggle="modal" data-target="#{{ $id }}" class="fh5co-project-item to-animate">
-						<div style="max-width:500px;padding-top:75%;position:relative;">
-							<img style="position:absolute;top:0;left:0;" src="{{ $img1 }}" alt="{{ $title }}" class="img-responsive lazy" >
-						</div>
-						<div style="z-index:10; position:relative; background-color:white;" class="fh5co-text">
-						<h2>{{ $title }}</h2>
-							<span>I'm a beautiful {{ lower $age }} {{ $.Scratch.Get $sex }}!</span>
-						</div>
-					</a>
-				</div>
-			
 
 
 
-				{{"<!-- Modal for Event Info -->" | safeHTML }}
-				<div id="{{ $id }}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-						<div class="modal-dialog ">
-							<div class="modal-content adoption-modal">
-								<div class="modal-header text-center">
-										<div class="row">
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-														<span aria-hidden="true">&times;</span>
-												</button>
-										</div>
-										<div id="{{ $title | urlize }}" class="carousel slide" data-ride="carousel">
-												<!-- Indicators -->
-												<ol class="carousel-indicators">
-													<li data-target="#{{ $title | urlize }}" data-slide-to="0" class="active"></li>
-													<li data-target="#{{ $title | urlize }}" data-slide-to="1"></li>
-													<li data-target="#{{ $title | urlize }}" data-slide-to="2"></li>
-												</ol>
-							
-												<!-- Wrapper for slides -->
-												<div class="carousel-inner">
-							
-													{{ with $img1 }}
-													<div class="item active" style="max-width:500px;padding-top:75%;">
-															<img style="position:absolute;top:0;left:0;" src="{{ . }}" alt="{{ $title }}" class="img-responsive img-rounded">
-													</div>
-													{{ end }} {{ if isset .media.photos.photo 7 }} {{ with index (index .media.photos.photo 7) "$t" }}
-													<div class="item" style="max-width:500px;padding-top:75%;">
-															<img style="position:absolute;top:0;left:0;" src="{{ . }}" alt="{{ $title }}" class="img-responsive img-rounded">
-													</div>
-													{{ end }} {{ end }} {{ if isset .media.photos.photo 12 }} {{ with index (index .media.photos.photo 12) "$t" }}
-													<div class="item" style="max-width:500px;padding-top:75%;">
-															<img style="position:absolute;top:0;left:0;" src="{{ . }}" alt="{{ $title }}" class="img-responsive img-rounded">
-													</div>
-													{{ end }} {{ end }}
-							
-												</div>
+					{{"<!-- Modal for Event Info -->" | safeHTML }}
+					<div id="{{ $id }}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+							<div class="modal-dialog ">
+								<div class="modal-content adoption-modal">
+									<div class="modal-header text-center">
+											<div class="row">
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+													</button>
 											</div>
-								</div>
-								<div class="modal-body">
-										<div class=" text-center">
-												<h2 class=" left-border">{{ $title }}</h2>
-														<h3>Description</h3>
-												<div class="row">
-													<div class="col-sm-12 text-left">
-														{{ $string := string $description  }} 
-														{{ $suffix := "If you would like to meet this dog, please e-mail HGA at jodye83@gmail.com or call 515-967-6564 (please leave a message) and we will get back to you as soon as possible with more information.The adoption fee for greyhounds through HGA is $275. This fee pays for medical costs including spay/neuter surgery, shots, parasite treatments, and teeth cleaning. HGA also microchips every greyhound prior to adoption as a permanent form of ID. The additional cost for this service is $17.99 ($10.99 if you register at the time of adoption through the Petfinder website or phone number) which covers the chip, activation, and membership and is a substantial savings over the usual cost for microchipping. Each dog also comes with a special sighthound collar and leash set and muzzle. There is a $25 non-refundable application fee that is applied to an approved adoption." }} 
-														{{ replace $string $suffix "" | safeHTML }}
+											<div id="{{ $title | urlize }}" class="carousel slide" data-ride="carousel">
+													<!-- Indicators -->
+													<ol class="carousel-indicators">
+														<li data-target="#{{ $title | urlize }}" data-slide-to="0" class="active"></li>
+														<li data-target="#{{ $title | urlize }}" data-slide-to="1"></li>
+														<li data-target="#{{ $title | urlize }}" data-slide-to="2"></li>
+													</ol>
+								
+													<!-- Wrapper for slides -->
+													<div class="carousel-inner">
+								
+														{{ with $img1 }}
+														<div class="item active" style="max-width:500px;padding-top:75%;">
+																<img style="position:absolute;top:0;left:0;" src="{{ . }}" alt="{{ $title }}" class="img-responsive img-rounded">
+														</div>
+														{{ end }} {{ if isset .media.photos.photo 7 }} {{ with index (index .media.photos.photo 7) "$t" }}
+														<div class="item" style="max-width:500px;padding-top:75%;">
+																<img style="position:absolute;top:0;left:0;" src="{{ . }}" alt="{{ $title }}" class="img-responsive img-rounded">
+														</div>
+														{{ end }} {{ end }} {{ if isset .media.photos.photo 12 }} {{ with index (index .media.photos.photo 12) "$t" }}
+														<div class="item" style="max-width:500px;padding-top:75%;">
+																<img style="position:absolute;top:0;left:0;" src="{{ . }}" alt="{{ $title }}" class="img-responsive img-rounded">
+														</div>
+														{{ end }} {{ end }}
+								
 													</div>
+												</div>
+									</div>
+									<div class="modal-body">
+											<div class=" text-center">
+													<h2 class=" left-border">{{ $title }}</h2>
+															<h3>Description</h3>
+													<div class="row">
+														<div class="col-sm-12 text-left">
+															{{ $string := string $description  }} 
+															{{ $suffix := "If you would like to meet this dog, please e-mail HGA at jodye83@gmail.com or call 515-967-6564 (please leave a message) and we will get back to you as soon as possible with more information.The adoption fee for greyhounds through HGA is $275. This fee pays for medical costs including spay/neuter surgery, shots, parasite treatments, and teeth cleaning. HGA also microchips every greyhound prior to adoption as a permanent form of ID. The additional cost for this service is $17.99 ($10.99 if you register at the time of adoption through the Petfinder website or phone number) which covers the chip, activation, and membership and is a substantial savings over the usual cost for microchipping. Each dog also comes with a special sighthound collar and leash set and muzzle. There is a $25 non-refundable application fee that is applied to an approved adoption." }} 
+															{{ replace $string $suffix "" | safeHTML }}
+														</div>
+													</div>
+													<br>
+													<div class="row">
+													<div class="col-sm-12 text-center">
+														<a class="btn btn-primary" href="adoption/" target="_self"><span class="btn-home">Learn How to Adopt Me</span></a>											
+													</div>
+												</div>
 												</div>
 												<br>
-												<div class="row">
-												<div class="col-sm-12 text-center">
-													<a class="btn btn-primary" href="adoption/" target="_self"><span class="btn-home">Learn How to Adopt Me</span></a>											
-												</div>
-											</div>
-											</div>
-											<br>
-											
-								<hr>
-								<div class="text-center">
-										<h2>Inquire</h2>
-					
-										<form name="Geryhound Inquiry" data-netlify="true" action="thank-you">
-											<div class="form-group">
-												<input type="hidden" id="greyhound" name="greyhound" value="{{ $title }}">
-											</div>
-											<div class="form-group ">
-													<label for="name" class="sr-only">Name</label>
-													<input id="name" class="form-control" name="name" placeholder="Name" type="text">
+												
+									<hr>
+									<div class="text-center">
+											<h2>Inquire</h2>
+						
+											<form name="Geryhound Inquiry" data-netlify="true" action="thank-you">
+												<div class="form-group">
+													<input type="hidden" id="greyhound" name="greyhound" value="{{ $title }}">
 												</div>
 												<div class="form-group ">
-													<label for="email" class="sr-only">Email</label>
-													<input id="email" class="form-control" name="_replyto" placeholder="Email" type="email">
-												</div>
+														<label for="name" class="sr-only">Name</label>
+														<input id="name" class="form-control" name="name" placeholder="Name" type="text">
+													</div>
+													<div class="form-group ">
+														<label for="email" class="sr-only">Email</label>
+														<input id="email" class="form-control" name="_replyto" placeholder="Email" type="email">
+													</div>
+													<div class="form-group ">
+														<label for="phone" class="sr-only">Phone</label>
+														<input id="phone" class="form-control" name="phone" placeholder="Phone" type="tel">
+													</div>
+													<div class="form-group ">
+														<label for="message" class="sr-only">Message</label>
+														<textarea id="message" cols="30" rows="5" class="form-control" name="message" placeholder="Message"></textarea>
+													</div>
 												<div class="form-group ">
-													<label for="phone" class="sr-only">Phone</label>
-													<input id="phone" class="form-control" name="phone" placeholder="Phone" type="tel">
+													<input class="btn btn-primary btn-lg" value="SEND" type="submit">
 												</div>
-												<div class="form-group ">
-													<label for="message" class="sr-only">Message</label>
-													<textarea id="message" cols="30" rows="5" class="form-control" name="message" placeholder="Message"></textarea>
-												</div>
-											<div class="form-group ">
-												<input class="btn btn-primary btn-lg" value="SEND" type="submit">
-											</div>
-										</form>
-									</div>
-									</div>
+											</form>
+										</div>
+										</div>
+								</div>
 							</div>
 						</div>
-					  </div>
+					{{ end }}
+			{{ else }}
+				{{ range $adoptables.petfinder.pets.pet }} 
+					{{ $title := index .name "$t" }} 
+					{{ $id := index .id "$t" }}
+					{{ $description := index .description "$t"}}
+					{{ $age := index .age "$t" }}
+					{{ $sex := index .sex "$t" }}
+					
+					{{ $img1 := index (index .media.photos.photo 2) "$t" }} 
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<a href="#" data-toggle="modal" data-target="#{{ $id }}" class="fh5co-project-item to-animate">
+							<div style="max-width:500px;padding-top:75%;position:relative;">
+								<img style="position:absolute;top:0;left:0;" src= "{{ $img1 }}" alt="{{ $title }}" class="img-responsive lazy" >
+							</div>
+							<div style="z-index:10; position:relative; background-color:white;" class="fh5co-text">
+							<h2>{{ $title }}</h2>
+								<span>I'm a beautiful {{ lower $age }} {{ $.Scratch.Get $sex }}!</span>
+							</div>
+						</a>
+					</div>
+				
+
+
+
+					{{"<!-- Modal for Event Info -->" | safeHTML }}
+					<div id="{{ $id }}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+							<div class="modal-dialog ">
+								<div class="modal-content adoption-modal">
+									<div class="modal-header text-center">
+											<div class="row">
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+													</button>
+											</div>
+											<div id="{{ $title | urlize }}" class="carousel slide" data-ride="carousel">
+													<!-- Indicators -->
+													<ol class="carousel-indicators">
+														<li data-target="#{{ $title | urlize }}" data-slide-to="0" class="active"></li>
+														<li data-target="#{{ $title | urlize }}" data-slide-to="1"></li>
+														<li data-target="#{{ $title | urlize }}" data-slide-to="2"></li>
+													</ol>
+								
+													<!-- Wrapper for slides -->
+													<div class="carousel-inner">
+								
+														{{ with $img1 }}
+														<div class="item active" style="max-width:500px;padding-top:75%;">
+																<img style="position:absolute;top:0;left:0;" src="{{ . }}" alt="{{ $title }}" class="img-responsive img-rounded">
+														</div>
+														{{ end }} {{ if isset .media.photos.photo 7 }} {{ with index (index .media.photos.photo 7) "$t" }}
+														<div class="item" style="max-width:500px;padding-top:75%;">
+																<img style="position:absolute;top:0;left:0;" src="{{ . }}" alt="{{ $title }}" class="img-responsive img-rounded">
+														</div>
+														{{ end }} {{ end }} {{ if isset .media.photos.photo 12 }} {{ with index (index .media.photos.photo 12) "$t" }}
+														<div class="item" style="max-width:500px;padding-top:75%;">
+																<img style="position:absolute;top:0;left:0;" src="{{ . }}" alt="{{ $title }}" class="img-responsive img-rounded">
+														</div>
+														{{ end }} {{ end }}
+								
+													</div>
+												</div>
+									</div>
+									<div class="modal-body">
+											<div class=" text-center">
+													<h2 class=" left-border">{{ $title }}</h2>
+															<h3>Description</h3>
+													<div class="row">
+														<div class="col-sm-12 text-left">
+															{{ $string := string $description  }} 
+															{{ $suffix := "If you would like to meet this dog, please e-mail HGA at jodye83@gmail.com or call 515-967-6564 (please leave a message) and we will get back to you as soon as possible with more information.The adoption fee for greyhounds through HGA is $275. This fee pays for medical costs including spay/neuter surgery, shots, parasite treatments, and teeth cleaning. HGA also microchips every greyhound prior to adoption as a permanent form of ID. The additional cost for this service is $17.99 ($10.99 if you register at the time of adoption through the Petfinder website or phone number) which covers the chip, activation, and membership and is a substantial savings over the usual cost for microchipping. Each dog also comes with a special sighthound collar and leash set and muzzle. There is a $25 non-refundable application fee that is applied to an approved adoption." }} 
+															{{ replace $string $suffix "" | safeHTML }}
+														</div>
+													</div>
+													<br>
+													<div class="row">
+													<div class="col-sm-12 text-center">
+														<a class="btn btn-primary" href="adoption/" target="_self"><span class="btn-home">Learn How to Adopt Me</span></a>											
+													</div>
+												</div>
+												</div>
+												<br>
+												
+									<hr>
+									<div class="text-center">
+											<h2>Inquire</h2>
+						
+											<form name="Geryhound Inquiry" data-netlify="true" action="thank-you">
+												<div class="form-group">
+													<input type="hidden" id="greyhound" name="greyhound" value="{{ $title }}">
+												</div>
+												<div class="form-group ">
+														<label for="name" class="sr-only">Name</label>
+														<input id="name" class="form-control" name="name" placeholder="Name" type="text">
+													</div>
+													<div class="form-group ">
+														<label for="email" class="sr-only">Email</label>
+														<input id="email" class="form-control" name="_replyto" placeholder="Email" type="email">
+													</div>
+													<div class="form-group ">
+														<label for="phone" class="sr-only">Phone</label>
+														<input id="phone" class="form-control" name="phone" placeholder="Phone" type="tel">
+													</div>
+													<div class="form-group ">
+														<label for="message" class="sr-only">Message</label>
+														<textarea id="message" cols="30" rows="5" class="form-control" name="message" placeholder="Message"></textarea>
+													</div>
+												<div class="form-group ">
+													<input class="btn btn-primary btn-lg" value="SEND" type="submit">
+												</div>
+											</form>
+										</div>
+										</div>
+								</div>
+							</div>
+						</div>
+				{{ end }}
 			{{ end }}
 			<div class="clearfix visible-sm-block"></div>
 		</div>
@@ -142,7 +259,6 @@
 			<div class="col-md-12 text-center to-animate">
 				<p>{{ .Site.Params.work.footertext | markdownify }}</p>				</div>
 		</div>
-		{{ end }}
 		{{ end }}
 	</div>
 </section>
