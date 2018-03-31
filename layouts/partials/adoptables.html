@@ -12,12 +12,12 @@
 				<h2 class="to-animate">Our Adoptables</h2>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 subtext to-animate">
-						<h3>We currently have {{ if ne (index $available "$t") ""}}{{index $available "$t" }} {{ if gt (index $available "$t") 1}}{{ pluralize "greyhound" }}{{ else }}greyhound{{ end }}{{ else }}0 greyhounds{{ end }} available for adoption.<br>{{ with .Site.Params.work.description }}{{ . | markdownify }}{{ end }}</h3>
+						<h3>We currently have {{ if ne (index $available "") ""}}{{index $available "$t" }} {{ if gt (index $available "$t") 1}}{{ pluralize "greyhound" }}{{ else }}greyhound{{ end }}{{ else }}0 greyhounds{{ end }} available for adoption.<br>{{ with .Site.Params.work.description }}{{ . | markdownify }}{{ end }}</h3>
 					</div>
 				</div>
 			</div>
 		</div>
-		{{ if ne (index $available "$t") ""}}
+		{{ if ne (index $available "") ""}}
 		<div class="row row-bottom-padded-sm">
 			
 			{{ range $adoptables.petfinder.pets.pet }} 				
