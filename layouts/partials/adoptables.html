@@ -20,7 +20,7 @@
 		<div class="row row-bottom-padded-sm">
 			
 			{{ range $adoptables.petfinder.pets.pet }} 				
-				{{ $title := index .name "$t" }} 
+				{{ $title := index $adoptables.petfinder.pets.pet.name "$t" }} 
 				{{ $id := index .id "$t" }}
 				{{ $description := index .description "$t"}}
 				{{ $age := index .age "$t" }}
