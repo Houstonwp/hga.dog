@@ -3,7 +3,7 @@
 {{ $.Scratch.Set "M" "male" }}
 {{ $.Scratch.Set "F" "female" }}
 {{ $.Scratch.Set "" "greyhound"}}
-{{ $available := index $adoptables.petfinder.lastOffset "$t" }}
+{{ $available := $adoptables.petfinder.lastOffset }}
 
 <section id="fh5co-adoptables">
 	<div class="container">
@@ -12,20 +12,22 @@
 				<h2 class="to-animate">Our Adoptables</h2>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 subtext to-animate">
-						<h3>We currently have {{ $available }} {{ if gt $available 1}}{{ pluralize "greyhound" }}{{ else }}greyhound{{ end }} available for adoption.<br>{{ with .Site.Params.work.description }}{{ . | markdownify }}{{ end }}</h3>
+						<h3>We currently have {{ if ne (index $available 1) ""}}{{index $available "$t" }} {{ if gt (index $available "$t") 1}}{{ pluralize "greyhound" }}{{ else }}greyhound{{ end }}{{ else }}0 greyhounds{{ end }} available for adoption.<br>{{ with .Site.Params.work.description }}{{ . | markdownify }}{{ end }}</h3>
 					</div>
 				</div>
 			</div>
 		</div>
+		{{ if isset $adoptables.petfinder.pets 1 }}
 		<div class="row row-bottom-padded-sm">
+			
 			{{ range $adoptables.petfinder.pets.pet }} 				
 				{{ $title := index .name "$t" }} 
 				{{ $id := index .id "$t" }}
 				{{ $description := index .description "$t"}}
 				{{ $age := index .age "$t" }}
 				{{ $sex := index .sex "$t" }}
-				{{ $img1 := index (index .media.photos.photo 2) "$t" }} 
 				
+				{{ $img1 := index (index .media.photos.photo 2) "$t" }} 
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<a href="#" data-toggle="modal" data-target="#{{ $id }}" class="fh5co-project-item to-animate">
 						<div style="max-width:500px;padding-top:75%;position:relative;">
@@ -37,6 +39,7 @@
 						</div>
 					</a>
 				</div>
+			
 
 
 
@@ -49,7 +52,7 @@
 												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 														<span aria-hidden="true">&times;</span>
 												</button>
-											</div>
+										</div>
 										<div id="{{ $title | urlize }}" class="carousel slide" data-ride="carousel">
 												<!-- Indicators -->
 												<ol class="carousel-indicators">
@@ -95,6 +98,9 @@
 													<a class="btn btn-primary" href="adoption/" target="_self"><span class="btn-home">Learn How to Adopt Me</span></a>											
 												</div>
 											</div>
+											</div>
+											<br>
+											
 								<hr>
 								<div class="text-center">
 										<h2>Inquire</h2>
@@ -128,8 +134,7 @@
 							</div>
 						</div>
 					  </div>
-
-			
+			{{ end }}
 			<div class="clearfix visible-sm-block"></div>
 		</div>
 		{{ end }}
