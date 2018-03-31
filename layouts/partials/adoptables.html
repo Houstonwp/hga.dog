@@ -20,8 +20,8 @@
 		<div class="row row-bottom-padded-sm">
 			{{ if eq $available nil }}
 			{{ else }}
-			{{ range $adoptables.petfinder.pets.pet }} 
-				{{ $title := with index .name "$t" . end }} 
+			{{ if isset $adoptables.petfinder.pets.pet 0 }}{{ range $adoptables.petfinder.pets.pet }}{{ else $adoptables.petfinder.pets.pet }}{{ end }}
+				{{ $title := index .name "$t" }} 
 				{{ $id := index .id "$t" }}
 				{{ $description := index .description "$t"}}
 				{{ $age := index .age "$t" }}
