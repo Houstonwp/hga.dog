@@ -12,21 +12,31 @@
 				<h2 class="to-animate">Our Adoptables</h2>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 subtext to-animate">
-						<h3>We currently have {{ $available }} {{ if gt $available 1}}{{ pluralize "greyhound" }}{{ else }}greyhound{{ end }} available for adoption.<br>{{ with .Site.Params.work.description }}{{ . | markdownify }}{{ end }}</h3>
+						<h3>We currently have {{ if eq $available nil }} 0 greyhounds {{ else }} {{ $available }} {{ if gt $available 1}}{{ pluralize "greyhound" }}{{ else }}greyhound{{ end }}{{ end }} available for adoption.<br>{{ with .Site.Params.work.description }}{{ . | markdownify }}{{ end }}</h3>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row row-bottom-padded-sm">
 			
-			{{ range $adoptables.petfinder.pets.pet }} 				
-				{{ $title := index $adoptables.petfinder.pets.pet.name "$t" }} 
-				{{ $id := index .id "$t" }}
-				{{ $description := index .description "$t"}}
-				{{ $age := index .age "$t" }}
-				{{ $sex := index .sex "$t" }}
-				
-				{{ $img1 := index (index .media.photos.photo 2) "$t" }} 
+			{{ range $adoptables.petfinder.pets.pet }} 
+				{{ if (eq ($adoptables.petfinder.pets.pet | len) 1) }}	
+					{{ $title := index $adoptables.petfinder.pets.pet.name "$t" }} 
+					{{ $id := index $adoptables.petfinder.pets.pet.id "$t" }}
+					{{ $description := index $adoptables.petfinder.pets.pet.description "$t"}}
+					{{ $age := index $adoptables.petfinder.pets.pet.age "$t" }}
+					{{ $sex := index $adoptables.petfinder.pets.pet.sex "$t" }}
+					
+					{{ $img1 := index (index $adoptables.petfinder.pets.pet.media.photos.photo 2) "$t" }} 
+				{{ else }}
+					{{ $title := index .name "$t" }} 
+					{{ $id := index .id "$t" }}
+					{{ $description := index .description "$t"}}
+					{{ $age := index .age "$t" }}
+					{{ $sex := index .sex "$t" }}
+					
+					{{ $img1 := index (index .media.photos.photo 2) "$t" }} 
+				{{ end }}
 				<div class="col-md-4 col-sm-6 col-xs-12">
 					<a href="#" data-toggle="modal" data-target="#{{ $id }}" class="fh5co-project-item to-animate">
 						<div style="max-width:500px;padding-top:75%;position:relative;">
