@@ -20,7 +20,7 @@
 		{{ if ne (index $adoptables.petfinder.pets "pet") nil}}
 		<div class="row row-bottom-padded-sm">
 			
-			{{ range $adoptables.petfinder.pets.pet }} 				
+			{{ range first 3 $adoptables.petfinder.pets.pet }} 				
 				{{ $title := index .name "$t" }} 
 				{{ $id := index .id "$t" }}
 				{{ $description := index .description "$t"}}
