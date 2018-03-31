@@ -19,7 +19,7 @@
 		</div>
 		<div class="row row-bottom-padded-sm">
 			{{ if eq $available nil }}
-			{{ else if eq $available 1}}
+			{{ else if eq $available "1"}}
 				{{with $adoptables.petfinder.pets.pet}}
 					{{ $title := index .name "$t" }} 
 					{{ $id := index .id "$t" }}
@@ -39,9 +39,6 @@
 							</div>
 						</a>
 					</div>
-				
-
-
 
 					{{"<!-- Modal for Event Info -->" | safeHTML }}
 					<div id="{{ $id }}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
