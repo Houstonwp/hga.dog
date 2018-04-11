@@ -14,7 +14,7 @@
 			<div class="row row-bottom-padded-sm">
 					{{ $urlPre := "https://graph.facebook.com" }}
 					{{ $fbevents := getJSON $urlPre "/v2.10/171731253749/events?access_token=" (getenv "HUGO_FB_KEY") "&fields=id,name,start_time,cover&time_filter=upcoming" }}
-					{{ range first 3 $fbevents.data }}
+					{{ range first 3 ( sort $fbevents.data ) }}
 				<div class="col-md-4 col-sm-12 ">
 					<a href="https://facebook.com/{{ .id }}" class="fh5co-project-item to-animate">
 						<img src="{{ .cover.source }}" alt="{{ .name }}" class="img-responsive">
@@ -30,7 +30,7 @@
 			{{ if gt (len $fbevents.data) 3 }}
 			<div class="row">
 				<div class="col-md-12 text-center to-animate">
-					<p>{{ .Site.Params.events.footertext | markdownify }}</p>
+					<p>{{ .Site.Params.events.footertext }}</p>
 				</div>
 			</div>
 			{{ end }}
