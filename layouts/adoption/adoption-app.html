@@ -25,7 +25,10 @@
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 col-sm-12 fh5co-adopt">
                         <!-- <form name="Adoption Application" data-netlify="true" action="https://artlhpzlvh.execute-api.us-west-2.amazonaws.com/dev/" method="POST"> -->
-                            <form name="Adoption Application" data-netlify="true" action="thank-you" method="POST">
+                            <form name="Adoption Application" netlify-honeypot="bot-field" data-netlify="true" action="thank-you" method="POST">
+                                    <p class="hidden">
+                                            <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+                                        </p>
                             <div class="row">
                                 <div>
                                     <h3 style="margin-bottom:20px; margin-left:20px;">APPLICANT #1</h3>
@@ -486,6 +489,7 @@
                                     of dogs aged 0-6 $275.00 and dogs aged 7+ $200.00 as stated in this contract.
                                 </label>
                             </div>
+                            <div data-netlify-recaptcha></div>
                             {{ if .Site.Params.stripe.enable }}
                             <div class="form-group" style="display: inline-block;">
                                     <script

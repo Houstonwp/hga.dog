@@ -2138,4 +2138,9 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-intro .fh5co-project-item:hover h2, #fh5co-intro .fh5co-project-item:hover span, #fh5co-work .fh5co-project-item:focus h2, #fh5co-work .fh5co-project-item:focus span {
   text-decoration: none !important;
 }
+
+.hidden {
+  visibility: hidden;
+}
+
 /*# sourceMappingURL=style.css.map */

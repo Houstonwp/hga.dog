@@ -22,7 +22,10 @@
 
 				<div class="col-md-6 to-animate">
 					<h3>{{ with .Site.Params.contact.form }}{{ . | markdownify }}{{ end }}</h3>
-					<form name="Home Contact" data-netlify="true" action="thank-you">
+					<form name="Home Contact" netlify-honeypot="bot-field" data-netlify="true" action="thank-you">
+							<p class="hidden">
+								<label>Don’t fill this out if you're human: <input name="bot-field"></label>
+							</p>
 					<div class="form-group ">
 						{{ with .Site.Params.contact.name }}
 						<label for="name" class="sr-only">{{ . | markdownify }}</label>
@@ -47,6 +50,7 @@
 						<textarea id="message" cols="30" rows="5" class="form-control" name="message" placeholder="{{ . }}"></textarea>
 						{{ end }}
 					</div>
+					<div data-netlify-recaptcha></div>
 					<div class="form-group ">
 						<input class="btn btn-primary btn-lg" value="{{ .Site.Params.contact.button | markdownify }}" type="submit">
 					</div>
