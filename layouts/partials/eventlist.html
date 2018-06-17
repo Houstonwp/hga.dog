@@ -13,7 +13,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="row row-bottom-padded-sm">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h3>View all of our <a href="https://facebook.com/heartlandgreyhoundadoption/events">upcoming events</a>.</h3>
+			</div>
+		</div>
+		<!-- <div class="row row-bottom-padded-sm">
 				{{ range $fbevents.data }}
 				{{ $id := delimit (slice ( substr (string .start_time) 0 10) .name) " " | urlize }}
 			<div class="col-md-4 col-sm-12 ">
@@ -28,6 +33,6 @@
 			<div class="clearfix visible-sm-block"></div>
 			
 		{{ end }}
-		</div>
+		</div> -->
 	</div>
 </section>
