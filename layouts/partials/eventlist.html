@@ -11,13 +11,14 @@
 						<h3>We currently have {{ len $fbevents.data }} upcoming {{ if gt (len $fbevents.data) 1}}{{ pluralize "event" }}{{ else }}event{{ end }} for you to attend.</h3>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h3>View all of our <a href="https://facebook.com/heartlandgreyhoundadoption/events">upcoming events</a>.</h3>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<h3>View all of our <a href="https://facebook.com/heartlandgreyhoundadoption/events">upcoming events</a>.</h3>
-			</div>
-		</div>
+		
 		<!-- <div class="row row-bottom-padded-sm">
 				{{ range $fbevents.data }}
 				{{ $id := delimit (slice ( substr (string .start_time) 0 10) .name) " " | urlize }}
