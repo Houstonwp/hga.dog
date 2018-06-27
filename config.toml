@@ -89,10 +89,10 @@ theme = "hugo-elate-theme"
 
   [params.intro.posts]
     enable = true
-    title = "Featured Post"
-    description = "Check out the latest HGA news, find helpful tips, and share greyhound stories."
+    title = "Apply Online"
+    description = "Filling out an application is the first step to finding your new family member."
     url = "#"
-    footertext = '<a class= "btn btn-primary" href="blog/" target="_self"><span class="btn-home">OUR BLOG</span></a>'
+    footertext = '<a class= "btn btn-primary" href="adoption/application/" target="_self"><span class="btn-home">APPLY NOW</span></a>'
 
 
   # Work section
