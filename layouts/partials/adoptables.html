@@ -138,7 +138,7 @@
 						</div>
 					{{ end }}
 			{{ else }}
-				{{ range $adoptables.petfinder.pets.pet }} 
+				{{ range first 3 $adoptables.petfinder.pets.pet }} 
 					{{ $title := index .name "$t" }} 
 					{{ $id := index .id "$t" }}
 					{{ $description := index .description "$t"}}
