@@ -1,4 +1,4 @@
-{{ $urlPre := "http://api.petfinder.com" }} 
+{{ $urlPre := "https://api.petfinder.com" }} 
 {{ $adoptables := getJSON $urlPre "/shelter.getPets?key=" (getenv "HUGO_PF_KEY") "&id=IA91&status=A&format=json" }}
 {{ $.Scratch.Set "M" "male" }}
 {{ $.Scratch.Set "F" "female" }}
