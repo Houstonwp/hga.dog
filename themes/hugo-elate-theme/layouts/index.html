@@ -8,26 +8,26 @@
         {{ partial "head.html" .}}
     </head>
     <body>
-			<div id="florida" class="modal fade">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h4 class="modal-title">On Florida</h4>
-							</div>
-							<div class="modal-body">
-								<p>To our followers and the greyhound community, we want you to know that we will be assisting to place the many dogs who will be displaced due to the vote in Florida. At the moment we are in the planning stages. Working with the folks in the greyhound industry and with other adoption groups to coordinate the task at hand. We will need help from you, our community. We will need foster homes, and more foster homes. The more places we have to host dogs, the more dogs we can help. If you aren't currently a foster home, and would like to be, please fill out our adoption application and note that you're wanting to help the Florida dogs - ignore the application fee: <a href="heartlandgreyhoundadoption.org/adoption/application">Adoption Application</a>
-								</p>
-								<p>Can't foster, but want to help? Let us know what you can/will do. Be specific, what skills and abilities do you have?</p>
-								<p>Stay tuned. In the coming days, weeks, and months we will know better what we need.</p>
-							</div>
-						</div>
-					</div>
-				</div>
+			
         {{ partial "nav.html" .}}
 
 		{{ partial "hero.html" .}}
-		
+		<div id="florida" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">On Florida</h4>
+						</div>
+						<div class="modal-body">
+							<p>To our followers and the greyhound community, we want you to know that we will be assisting to place the many dogs who will be displaced due to the vote in Florida. At the moment we are in the planning stages. Working with the folks in the greyhound industry and with other adoption groups to coordinate the task at hand. We will need help from you, our community. We will need foster homes, and more foster homes. The more places we have to host dogs, the more dogs we can help. If you aren't currently a foster home, and would like to be, please fill out our adoption application and note that you're wanting to help the Florida dogs - ignore the application fee: <a href="heartlandgreyhoundadoption.org/adoption/application">Adoption Application</a>
+							</p>
+							<p>Can't foster, but want to help? Let us know what you can/will do. Be specific, what skills and abilities do you have?</p>
+							<p>Stay tuned. In the coming days, weeks, and months we will know better what we need.</p>
+						</div>
+					</div>
+				</div>
+			</div>
         {{ partial "intro.html" .}}
 
 		{{ if .Site.Params.work.enable }}
