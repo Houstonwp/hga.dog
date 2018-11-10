@@ -203,18 +203,18 @@ theme = "hugo-elate-theme"
      
 
     [[params.about.item]]
-      name = "Ryan Hasty"
+      name = "LuAnn Kircher"
       position = "Treasurer"
       description = ""
-      img = "HGA-board-1-6.jpg"
+      img = "HGA-board-1-7.jpg"
       alt = "Person3"
       
 
     [[params.about.item]]
-      name = "Gretchen Meyer"
+      name = "Sarah Mairet"
       position = "Member-at-Large"
       description = ""
-      img = "HGA-board-1-2.jpg"
+      img = "HGA-board-1-9.jpg"
       alt = "Person3"
       
 
@@ -227,10 +227,10 @@ theme = "hugo-elate-theme"
       
 
     [[params.about.item]]
-      name = "LuAnn Kircher"
+      name = "Stephanie Alcorn"
       position = "Member-at-Large"
       description = ""
-      img = "HGA-board-1-7.jpg"
+      img = "HGA-board-1-8.jpg"
       alt = "Person3"
       
 
