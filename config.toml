@@ -195,11 +195,11 @@ theme = "hugo-elate-theme"
      
 
     [[params.about.item]]
-      name = "Lisa Helmick"
+      name = "Alison Jensen"
       position = "Secretary"
       description = ""
-      img = "HGA-board-1-5.jpg"
-      alt = "Person3"
+      img = ""
+      alt = "Secretary"
      
 
     [[params.about.item]]
