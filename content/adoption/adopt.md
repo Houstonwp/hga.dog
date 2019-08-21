@@ -24,7 +24,7 @@ Greyhounds at home don’t need a lot of exercise. They are content with a soft 
 
 ### How to Adopt ###
 
-The adoption fee for greyhounds through HGA is $275. Senior (age 7+) dogs have a discounted fee of $200. This fee helps to pay for medical costs including spay/neuter surgery, shots, parasite treatments, and teeth cleaning. Each dog also comes with a special sight hound (martingale) collar, leash, and muzzle. Those who adopt greyhounds through HGA get a one-year membership in the group. There is a $25 non-refundable application fee that is applied to an approved adoption.
+The adoption fee for greyhounds through HGA is $285.99. Senior (age 7+) dogs have a discounted fee of $210.99. This fee helps to pay for medical costs including spay/neuter surgery, shots, parasite treatments, and teeth cleaning. Each dog also comes with a special sight hound (martingale) collar, leash, and muzzle. Those who adopt greyhounds through HGA get a one-year membership in the group. There is a $25 non-refundable application fee that is applied to an approved adoption.
 
 ### Adoption Process ###
 
