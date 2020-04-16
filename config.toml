@@ -211,19 +211,19 @@ theme = "hugo-elate-theme"
       
 
     [[params.about.item]]
-      name = "Sarah Mairet"
+      name = "Liz Wilson"
       position = "Member-at-Large"
       description = ""
-      img = "HGA-board-1-9.jpg"
-      alt = "Person3"
+      img = "liz_wilson.jpg"
+      alt = "Liz Wilson"
       
 
     [[params.about.item]]
-      name = "Haylee Andersen"
+      name = "Brandon Kiesling"
       position = "Member-at-Large"
       description = ""
-      img = "HGA-board-1.jpg"
-      alt = "Person3"
+      img = "brandon_kiesling.jpg"
+      alt = "Brandon Kiesling"
       
 
     [[params.about.item]]
