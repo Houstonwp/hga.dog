@@ -1,44 +1,23 @@
-	<section id="fh5co-events" style="background-image: url(images/{{ .Site.Params.counters.background }});" data-section="events">
-		<div class="fh5co-overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-left">
-					<h2 class=" left-border to-animate">{{ with .Site.Params.events.title }}{{ . | markdownify }}{{ end }}</h2>
-					<div class="row">
-						<div class="col-md-8 subtext to-animate">
-							<h3>{{ with .Site.Params.events.description }}{{ . | markdownify }}{{ end }}</h3>
-						</div>
+<section id="fh5co-events" style="background-image: url(images/{{ .Site.Params.counters.background }});"
+	data-section="events">
+	<div class="fh5co-overlay"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 section-heading text-left">
+				<h2 class=" left-border to-animate">{{ with .Site.Params.events.title }}{{ . | markdownify }}{{ end }}
+				</h2>
+				<div class="row">
+					<div class="col-md-8 subtext to-animate">
+						<h3>{{ with .Site.Params.events.description }}{{ . | markdownify }}{{ end }}</h3>
 					</div>
-					<div class="row">
-						<div class="col-md-12 text-center to-animate">
-							<h3 style="color:white;">View all of our <a href="https://facebook.com/heartlandgreyhoundadoption/events">upcoming events</a>.</h3>
-						</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center to-animate">
+						<h3 style="color:white;">View all of our <a
+								href="https://facebook.com/heartlandgreyhoundadoption/events">upcoming events</a>.</h3>
 					</div>
 				</div>
 			</div>
-			
-			<!-- <div class="row row-bottom-padded-sm">
-					{{ $urlPre := "https://graph.facebook.com" }}
-					{{ $fbevents := getJSON $urlPre "/v2.10/171731253749/events?access_token=" (getenv "HUGO_FB_KEY") "&fields=id,name,start_time,cover&time_filter=upcoming" }}
-					{{ range first 3 ( sort $fbevents.data ) }}
-				<div class="col-md-4 col-sm-12 ">
-					<a href="https://facebook.com/{{ .id }}" class="fh5co-project-item to-animate">
-						<img src="{{ .cover.source }}" alt="{{ .name }}" class="img-responsive">
-						<div class="fh5co-text">
-						<h2>{{ .name }}</h2>
-							<span>{{ dateFormat "Monday, January 2, 2006" ( substr (string .start_time) 0 10) }}</span>
-						</div>
-					</a>
-				</div>				
-				<div class="clearfix visible-sm-block"></div>
-			{{ end }}
-			</div>
-			{{ if gt (len $fbevents.data) 3 }}
-			<div class="row">
-				<div class="col-md-12 text-center to-animate">
-					<p>{{ .Site.Params.events.footertext | markdownify }}</p>
-				</div>
-			</div>
-			{{ end }} -->
 		</div>
-	</section>
+	</div>
+</section>
